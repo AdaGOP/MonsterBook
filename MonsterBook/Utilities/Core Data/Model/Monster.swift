@@ -14,9 +14,10 @@ class Monster {
     var type: MonsterType?
     var isFavorite: Bool?
     
-    init(name: String, age: Int, description: String) {
+    init(name: String, age: Int, description: String, type: MonsterType) {
         self.name = name
         self.age = age
+        self.type = type
         self.isFavorite = false
     }
     
