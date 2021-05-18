@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xr-nW-N4L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard Table View Controller-->
+        <scene sceneID="wlr-6W-Wqu">
+            <objects>
+                <tableViewController id="pSK-zL-hro" customClass="DashboardTableViewController" customModule="MonsterBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dEK-fC-3jt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aCM-JD-7l8">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aCM-JD-7l8" id="5Ut-fK-Zms">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pSK-zL-hro" id="lS1-UE-GmP"/>
+                            <outlet property="delegate" destination="pSK-zL-hro" id="Tnk-6x-Zdg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xjj-ZA-juw"/>
+                    <connections>
+                        <segue destination="O0h-qB-LhT" kind="show" identifier="toListofMonsters" id="a8F-Kd-2Is"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcQ-jR-ngP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539.1304347826087" y="187.5"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="p8s-Sg-Od4">
+            <objects>
+                <viewController id="nkK-Uh-LPL" customClass="DashboardViewController" customModule="MonsterBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFV-jj-qjI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lie-aQ-stg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8JY-Q2-Yt4">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8JY-Q2-Yt4" id="zuH-ty-87S">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7CA-O0-87c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lie-aQ-stg" firstAttribute="leading" secondItem="7CA-O0-87c" secondAttribute="leading" id="68M-nk-MhU"/>
+                            <constraint firstAttribute="bottom" secondItem="lie-aQ-stg" secondAttribute="bottom" id="V9s-J5-fgf"/>
+                            <constraint firstItem="lie-aQ-stg" firstAttribute="top" secondItem="7CA-O0-87c" secondAttribute="top" id="kSn-jN-pgQ"/>
+                            <constraint firstItem="lie-aQ-stg" firstAttribute="trailing" secondItem="7CA-O0-87c" secondAttribute="trailing" id="qa7-r0-awb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IGh-Hf-k7T"/>
+                    <connections>
+                        <outlet property="dashboardTableView" destination="lie-aQ-stg" id="k4u-t6-pwB"/>
+                        <segue destination="O0h-qB-LhT" kind="show" id="4Fe-Vp-Sqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMK-JR-T6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1538" y="1152"/>
+        </scene>
+        <!--ListOfMonsters-->
+        <scene sceneID="flV-uu-iSI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListOfMonsters" id="O0h-qB-LhT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iSl-gu-tML"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKn-nQ-Y9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="668"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gdY-Oz-Oqm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OMq-x1-Edm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="giv-Nd-R8Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pSK-zL-hro" kind="relationship" relationship="rootViewController" id="eJf-Cb-3MY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axC-oG-JnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628.98550724637687" y="187.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bcy-sM-HYN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Xr-nW-N4L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D6Y-2a-pO5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nkK-Uh-LPL" kind="relationship" relationship="rootViewController" id="W3a-zB-c2k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6A-nU-Sg5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="1152"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Fe-Vp-Sqd"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

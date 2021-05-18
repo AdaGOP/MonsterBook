@@ -15,7 +15,7 @@
 		2C03A3E52652996E00A71F1D /* FavoriteMonsterCollectionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3E32652996E00A71F1D /* FavoriteMonsterCollectionsTableViewCell.xib */; };
 		2C03A3EA26529E5700A71F1D /* ListOfMonstersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */; };
 		2C03A3ED26529EA300A71F1D /* ListOfMonsters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */; };
-		2C386BBF264E0C690082F4B7 /* Seeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BBE264E0C690082F4B7 /* Seeder.swift */; };
+		2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */; };
 		2C386BC2264E1C480082F4B7 /* MonsterDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C386BC1264E1C480082F4B7 /* MonsterDetails.storyboard */; };
 		2C386BC5264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */; };
 		2C67DCAB2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */; };
@@ -36,9 +36,17 @@
 		2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF96CA326499A88005A7B9F /* AppDelegate.swift */; };
 		2CF96CA626499A88005A7B9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF96CA526499A88005A7B9F /* SceneDelegate.swift */; };
 		2CF96CA826499A88005A7B9F /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF96CA726499A88005A7B9F /* DashboardTableViewController.swift */; };
-		2CF96CAB26499A88005A7B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CA926499A88005A7B9F /* Main.storyboard */; };
+		2CF96CAB26499A88005A7B9F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CA926499A88005A7B9F /* Dashboard.storyboard */; };
 		2CF96CAD26499A88005A7B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAC26499A88005A7B9F /* Assets.xcassets */; };
 		2CF96CB026499A88005A7B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */; };
+		55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */; };
+		55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */; };
+		55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DED265388EA004F7C30 /* MonsterRepository.swift */; };
+		55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF226539497004F7C30 /* DashboardViewController.swift */; };
+		55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF926539E65004F7C30 /* UINib+Loader.swift */; };
+		55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DFC26539E9D004F7C30 /* NetworkManager.swift */; };
+		55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */; };
+		55240E012653A33C004F7C30 /* DashboardViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +58,7 @@
 		2C03A3E32652996E00A71F1D /* FavoriteMonsterCollectionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteMonsterCollectionsTableViewCell.xib; sourceTree = "<group>"; };
 		2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMonstersTableViewController.swift; sourceTree = "<group>"; };
 		2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfMonsters.storyboard; sourceTree = "<group>"; };
-		2C386BBE264E0C690082F4B7 /* Seeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeder.swift; sourceTree = "<group>"; };
+		2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederStaticDataStore.swift; sourceTree = "<group>"; };
 		2C386BC1264E1C480082F4B7 /* MonsterDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonsterDetails.storyboard; sourceTree = "<group>"; };
 		2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailsTableViewController.swift; sourceTree = "<group>"; };
 		2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
@@ -72,10 +80,18 @@
 		2CF96CA326499A88005A7B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF96CA526499A88005A7B9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2CF96CA726499A88005A7B9F /* DashboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
-		2CF96CAA26499A88005A7B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF96CAA26499A88005A7B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		2CF96CAC26499A88005A7B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF96CAF26499A88005A7B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF96CB126499A88005A7B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederCoreDataStore.swift; sourceTree = "<group>"; };
+		55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederNetworkDataStore.swift; sourceTree = "<group>"; };
+		55240DED265388EA004F7C30 /* MonsterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepository.swift; sourceTree = "<group>"; };
+		55240DF226539497004F7C30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		55240DF926539E65004F7C30 /* UINib+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Loader.swift"; sourceTree = "<group>"; };
+		55240DFC26539E9D004F7C30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+DataSource+Delegate.swift"; sourceTree = "<group>"; };
+		55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,23 +136,15 @@
 			isa = PBXGroup;
 			children = (
 				2C6A2E3C264D654400D4FAA6 /* UI */,
-				2C6A2E3D264D654800D4FAA6 /* Color */,
 				2C6A2E3E264D654F00D4FAA6 /* Fonts */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
 		};
-		2C6A2E3A264D651800D4FAA6 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		2C6A2E3B264D651C00D4FAA6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2C6A2E45264D662A00D4FAA6 /* Networking */,
+				55240DFB26539E91004F7C30 /* Networking */,
 				2C6A2E46264D663100D4FAA6 /* Core Data */,
 			);
 			path = Utilities;
@@ -150,13 +158,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		2C6A2E3D264D654800D4FAA6 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
 		2C6A2E3E264D654F00D4FAA6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,16 +166,10 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		2C6A2E45264D662A00D4FAA6 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
 		2C6A2E46264D663100D4FAA6 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				2C75FA3F264C3C750074C779 /* Model */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -192,11 +187,8 @@
 		2C75FA3E264C3C500074C779 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				2C75FA56264C41C70074C779 /* Monster Dashboard */,
-				2C75FA59264C42100074C779 /* Add Monster */,
 				2C75FA3C264C37390074C779 /* List of Monster */,
 				2C75FA57264C41EC0074C779 /* Monster Details */,
-				2C75FA58264C41FE0074C779 /* Edit Monster */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -211,22 +203,8 @@
 				2C75FA4D264C3DDD0074C779 /* AirMonster.swift */,
 				2C75FA50264C3E050074C779 /* MetalMonster.swift */,
 				2C75FA53264C3E120074C779 /* ShadowMonster.swift */,
-				2C386BBE264E0C690082F4B7 /* Seeder.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		2C75FA56264C41C70074C779 /* Monster Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				2CC5FC5F2649A2AC00E4DE59 /* Category Collections */,
-				2C255A90264A2E3100CAA2E0 /* Category Cell */,
-				2C03A3E12652987000A71F1D /* Favorite Monster Collections */,
-				2CC5FC602649A2D300E4DE59 /* Favorite Monster Cell */,
-				2C03A3D326528E9800A71F1D /* Header Cell */,
-				2CF96CA726499A88005A7B9F /* DashboardTableViewController.swift */,
-			);
-			path = "Monster Dashboard";
 			sourceTree = "<group>";
 		};
 		2C75FA57264C41EC0074C779 /* Monster Details */ = {
@@ -236,20 +214,6 @@
 				2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */,
 			);
 			path = "Monster Details";
-			sourceTree = "<group>";
-		};
-		2C75FA58264C41FE0074C779 /* Edit Monster */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Edit Monster";
-			sourceTree = "<group>";
-		};
-		2C75FA59264C42100074C779 /* Add Monster */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Add Monster";
 			sourceTree = "<group>";
 		};
 		2C75FA63264C43850074C779 /* Monsters List Cell */ = {
@@ -298,19 +262,111 @@
 		2CF96CA226499A88005A7B9F /* MonsterBook */ = {
 			isa = PBXGroup;
 			children = (
-				2C6A2E39264D651000D4FAA6 /* Themes */,
-				2C75FA3F264C3C750074C779 /* Model */,
+				55240DE4265387A7004F7C30 /* Feature */,
 				2C75FA3E264C3C500074C779 /* Pages */,
-				2C6A2E3A264D651800D4FAA6 /* Helper */,
+				2C6A2E39264D651000D4FAA6 /* Themes */,
+				55240DF826539E57004F7C30 /* Helper */,
 				2C6A2E3B264D651C00D4FAA6 /* Utilities */,
 				2CF96CA326499A88005A7B9F /* AppDelegate.swift */,
 				2CF96CA526499A88005A7B9F /* SceneDelegate.swift */,
-				2CF96CA926499A88005A7B9F /* Main.storyboard */,
 				2CF96CAC26499A88005A7B9F /* Assets.xcassets */,
 				2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */,
 				2CF96CB126499A88005A7B9F /* Info.plist */,
 			);
 			path = MonsterBook;
+			sourceTree = "<group>";
+		};
+		55240DE4265387A7004F7C30 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				55240DE5265387B1004F7C30 /* MonsterPresentation */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		55240DE5265387B1004F7C30 /* MonsterPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				55240DE7265387ED004F7C30 /* Model */,
+				55240DE6265387E2004F7C30 /* Pages */,
+			);
+			path = MonsterPresentation;
+			sourceTree = "<group>";
+		};
+		55240DE6265387E2004F7C30 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				55240DEF26538BC1004F7C30 /* Dashboard */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		55240DE7265387ED004F7C30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55240DEC265388B0004F7C30 /* DataStore */,
+				55240DED265388EA004F7C30 /* MonsterRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55240DEC265388B0004F7C30 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */,
+				55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */,
+				55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		55240DEF26538BC1004F7C30 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				55240DF126538BDC004F7C30 /* Controller */,
+				55240DF026538BD8004F7C30 /* View */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		55240DF026538BD8004F7C30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CF96CA926499A88005A7B9F /* Dashboard.storyboard */,
+				2C03A3D326528E9800A71F1D /* Header Cell */,
+				2CC5FC5F2649A2AC00E4DE59 /* Category Collections */,
+				2C255A90264A2E3100CAA2E0 /* Category Cell */,
+				2C03A3E12652987000A71F1D /* Favorite Monster Collections */,
+				2CC5FC602649A2D300E4DE59 /* Favorite Monster Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55240DF126538BDC004F7C30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CF96CA726499A88005A7B9F /* DashboardTableViewController.swift */,
+				55240DF226539497004F7C30 /* DashboardViewController.swift */,
+				55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */,
+				55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55240DF826539E57004F7C30 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				55240DF926539E65004F7C30 /* UINib+Loader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		55240DFB26539E91004F7C30 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				55240DFC26539E9D004F7C30 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +434,7 @@
 				2C03A3ED26529EA300A71F1D /* ListOfMonsters.storyboard in Resources */,
 				2CF96CB026499A88005A7B9F /* LaunchScreen.storyboard in Resources */,
 				2CF96CAD26499A88005A7B9F /* Assets.xcassets in Resources */,
-				2CF96CAB26499A88005A7B9F /* Main.storyboard in Resources */,
+				2CF96CAB26499A88005A7B9F /* Dashboard.storyboard in Resources */,
 				2C03A3D726528EB800A71F1D /* HeaderTableViewCell.xib in Resources */,
 				2C03A3E52652996E00A71F1D /* FavoriteMonsterCollectionsTableViewCell.xib in Resources */,
 				2CC5FC6B2649A94500E4DE59 /* CategoryTableViewCell.xib in Resources */,
@@ -393,22 +449,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C75FA4E264C3DDD0074C779 /* AirMonster.swift in Sources */,
+				55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */,
 				2C75FA45264C3D860074C779 /* WaterMonster.swift in Sources */,
 				2C03A3E42652996E00A71F1D /* FavoriteMonsterCollectionsTableViewCell.swift in Sources */,
 				2C03A3D626528EB800A71F1D /* HeaderTableViewCell.swift in Sources */,
 				2CF96CA826499A88005A7B9F /* DashboardTableViewController.swift in Sources */,
+				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift in Sources */,
+				55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */,
 				2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */,
+				55240E012653A33C004F7C30 /* DashboardViewControllerDelegate.swift in Sources */,
+				55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */,
 				2C03A3DD2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift in Sources */,
 				2C75FA51264C3E050074C779 /* MetalMonster.swift in Sources */,
+				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
 				2C75FA48264C3D8E0074C779 /* FireMonster.swift in Sources */,
 				2C75FA41264C3D150074C779 /* Monster.swift in Sources */,
 				2CF96CA626499A88005A7B9F /* SceneDelegate.swift in Sources */,
 				2C75FA60264C437C0074C779 /* MonstersListTableViewCell.swift in Sources */,
+				55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */,
 				2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */,
+				55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */,
 				2C75FA4B264C3DD40074C779 /* GroundMonster.swift in Sources */,
 				2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */,
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
-				2C386BBF264E0C690082F4B7 /* Seeder.swift in Sources */,
+				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersTableViewController.swift in Sources */,
 				2C75FA54264C3E120074C779 /* ShadowMonster.swift in Sources */,
 				2C386BC5264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift in Sources */,
@@ -418,12 +482,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2CF96CA926499A88005A7B9F /* Main.storyboard */ = {
+		2CF96CA926499A88005A7B9F /* Dashboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2CF96CAA26499A88005A7B9F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Dashboard.storyboard;
 			sourceTree = "<group>";
 		};
 		2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */ = {
