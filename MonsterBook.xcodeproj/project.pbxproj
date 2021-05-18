@@ -19,12 +19,6 @@
 		2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */; };
 		2C75FA31264B99C40074C779 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */; };
 		2C75FA41264C3D150074C779 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA40264C3D140074C779 /* Monster.swift */; };
-		2C75FA45264C3D860074C779 /* WaterMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA44264C3D860074C779 /* WaterMonster.swift */; };
-		2C75FA48264C3D8E0074C779 /* FireMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA47264C3D8E0074C779 /* FireMonster.swift */; };
-		2C75FA4B264C3DD40074C779 /* GroundMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA4A264C3DD40074C779 /* GroundMonster.swift */; };
-		2C75FA4E264C3DDD0074C779 /* AirMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA4D264C3DDD0074C779 /* AirMonster.swift */; };
-		2C75FA51264C3E050074C779 /* MetalMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA50264C3E050074C779 /* MetalMonster.swift */; };
-		2C75FA54264C3E120074C779 /* ShadowMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA53264C3E120074C779 /* ShadowMonster.swift */; };
 		2C75FA60264C437C0074C779 /* MonstersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA5E264C437C0074C779 /* MonstersListTableViewCell.swift */; };
 		2C75FA61264C437C0074C779 /* MonstersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75FA5F264C437C0074C779 /* MonstersListTableViewCell.xib */; };
 		2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5FC682649A94500E4DE59 /* CategoryTableViewCell.swift */; };
@@ -58,12 +52,6 @@
 		2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C75FA40264C3D140074C779 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
-		2C75FA44264C3D860074C779 /* WaterMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMonster.swift; sourceTree = "<group>"; };
-		2C75FA47264C3D8E0074C779 /* FireMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireMonster.swift; sourceTree = "<group>"; };
-		2C75FA4A264C3DD40074C779 /* GroundMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundMonster.swift; sourceTree = "<group>"; };
-		2C75FA4D264C3DDD0074C779 /* AirMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirMonster.swift; sourceTree = "<group>"; };
-		2C75FA50264C3E050074C779 /* MetalMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalMonster.swift; sourceTree = "<group>"; };
-		2C75FA53264C3E120074C779 /* ShadowMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowMonster.swift; sourceTree = "<group>"; };
 		2C75FA5E264C437C0074C779 /* MonstersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersListTableViewCell.swift; sourceTree = "<group>"; };
 		2C75FA5F264C437C0074C779 /* MonstersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonstersListTableViewCell.xib; sourceTree = "<group>"; };
 		2CC5FC682649A94500E4DE59 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,12 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				2C75FA40264C3D140074C779 /* Monster.swift */,
-				2C75FA44264C3D860074C779 /* WaterMonster.swift */,
-				2C75FA47264C3D8E0074C779 /* FireMonster.swift */,
-				2C75FA4A264C3DD40074C779 /* GroundMonster.swift */,
-				2C75FA4D264C3DDD0074C779 /* AirMonster.swift */,
-				2C75FA50264C3E050074C779 /* MetalMonster.swift */,
-				2C75FA53264C3E120074C779 /* ShadowMonster.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,9 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C75FA4E264C3DDD0074C779 /* AirMonster.swift in Sources */,
 				55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */,
-				2C75FA45264C3D860074C779 /* WaterMonster.swift in Sources */,
 				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift in Sources */,
 				55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */,
 				2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */,
@@ -420,21 +400,17 @@
 				55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */,
 				2C03A3DD2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift in Sources */,
 				55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */,
-				2C75FA51264C3E050074C779 /* MetalMonster.swift in Sources */,
 				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
-				2C75FA48264C3D8E0074C779 /* FireMonster.swift in Sources */,
 				2C75FA41264C3D150074C779 /* Monster.swift in Sources */,
 				2CF96CA626499A88005A7B9F /* SceneDelegate.swift in Sources */,
 				2C75FA60264C437C0074C779 /* MonstersListTableViewCell.swift in Sources */,
 				55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */,
 				2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */,
 				55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */,
-				2C75FA4B264C3DD40074C779 /* GroundMonster.swift in Sources */,
 				2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */,
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
 				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersTableViewController.swift in Sources */,
-				2C75FA54264C3E120074C779 /* ShadowMonster.swift in Sources */,
 				2C386BC5264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
