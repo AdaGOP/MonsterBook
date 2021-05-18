@@ -13,17 +13,17 @@ struct SeederStaticDataStore{
         var arrMons = [Monster]()
         
         /// Create the monsters
-        let mons1 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons2 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons3 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons4 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons5 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons6 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons7 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons8 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons9 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons10 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
-        let mons11 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster")
+        let mons1 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons2 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons3 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons4 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons5 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons6 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons7 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons8 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons9 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons10 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
+        let mons11 = Monster(name: "Gloop", age: 2, description: "Gloop is a very young monster", type: .air)
         
         
         /// Add the monsters that we created into array
