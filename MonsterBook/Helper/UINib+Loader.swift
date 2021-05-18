@@ -7,20 +7,34 @@
 
 import UIKit
 
-fileprivate extension UINib {
-    static func nib(named nibName: String) -> UINib {
+extension UINib {
+    static func nib(_ nibName: String) -> UINib {
         return UINib(nibName: nibName, bundle: nil)
     }
     
     static func loadSingleView(_ nibName: String, owner: Any?) -> UIView {
-        return nib(named: nibName).instantiate(withOwner: owner, options: nil).first as! UIView
+        return nib(nibName).instantiate(withOwner: owner, options: nil).first as! UIView
     }
 }
 
 extension UINib {
-    
-    class func loadPlayerScoreboardMoveEditorView(_ owner: AnyObject) -> UIView {
-        return loadSingleView("PlayerScoreboardMoveEditorView", owner: owner)
+    class func loadView(_ owner: AnyObject) -> UIView {
+        return loadSingleView("\(owner.self)", owner: owner)
     }
     
 }
+
+extension UITableView {
+    func registerCell(type: UITableViewCell.Type, identifier: String) {
+        let nib = UINib.nib("\(type)")
+        self.register(nib, forCellReuseIdentifier: identifier)
+    }
+}
+
+extension UICollectionView {
+    func registerCell(type: UICollectionViewCell.Type, identifier: String) {
+        let nib = UINib.nib("\(type)")
+        self.register(nib, forCellWithReuseIdentifier: identifier)
+    }
+}
+

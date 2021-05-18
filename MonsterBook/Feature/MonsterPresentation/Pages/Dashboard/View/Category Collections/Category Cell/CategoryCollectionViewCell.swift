@@ -11,10 +11,21 @@ class CategoryCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var categoryLabel: UILabel!
     
+    var type: MonsterType? {
+        didSet {
+            setupView()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.layer.cornerRadius = 18
+    }
+    
+    func setupView() {
+        self.layer.cornerRadius = 16
+        self.backgroundColor = type?.getColor()
+        categoryLabel.text = type?.rawValue
     }
 
 }

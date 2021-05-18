@@ -10,18 +10,22 @@ import UIKit
 class FavoriteMonsterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var monsterImage: UIImageView!
-    
     @IBOutlet weak var monsterNameLabel: UILabel!
+    @IBOutlet weak var monsterTypeLabel: UILabel!
+    @IBOutlet weak var mView: UIView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        
+    var monster: Monster? {
+        didSet {
+            setupView()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    
+    private func setupView() {
+        mView.layer.cornerRadius = 8
+        mView.backgroundColor = .brown
+        
+        monsterNameLabel.text = monster?.name
+        monsterTypeLabel.text = "Test label"
         
     }
     
