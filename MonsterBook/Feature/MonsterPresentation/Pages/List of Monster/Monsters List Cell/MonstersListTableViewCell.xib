@@ -17,22 +17,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlF-lQ-o5i">
-                        <rect key="frame" x="0.0" y="0.0" width="350" height="148"/>
+                        <rect key="frame" x="20" y="0.0" width="310" height="136"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erm-jd-m25">
-                                <rect key="frame" x="8" y="10" width="97" height="128"/>
+                                <rect key="frame" x="21" y="16" width="81" height="105"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="6yb-h9-kFy"/>
+                                    <constraint firstAttribute="width" constant="81" id="DLb-ZS-FFd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E23-66-Lcq">
-                                <rect key="frame" x="117" y="28" width="225" height="21"/>
+                                <rect key="frame" x="117" y="28" width="193" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="Bv2-DW-kdX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-40-n4Y">
-                                <rect key="frame" x="117" y="57" width="225" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsC-40-n4Y">
+                                <rect key="frame" x="117" y="49" width="178" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="i4S-S7-2Yj"/>
+                                    <constraint firstAttribute="width" constant="178" id="vZp-7X-8wc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -40,24 +47,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.19607843137254902" green="0.24705882352941178" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="E23-66-Lcq" firstAttribute="leading" secondItem="erm-jd-m25" secondAttribute="trailing" constant="12" id="4zn-GA-pOR"/>
-                            <constraint firstAttribute="trailing" secondItem="LsC-40-n4Y" secondAttribute="trailing" constant="8" id="EbQ-Sw-ShZ"/>
-                            <constraint firstAttribute="bottom" secondItem="erm-jd-m25" secondAttribute="bottom" constant="10" id="JfG-LR-taQ"/>
-                            <constraint firstAttribute="bottom" secondItem="LsC-40-n4Y" secondAttribute="bottom" constant="10" id="KbQ-hg-t8N"/>
-                            <constraint firstAttribute="trailing" secondItem="E23-66-Lcq" secondAttribute="trailing" constant="8" id="UnE-AP-jry"/>
-                            <constraint firstItem="LsC-40-n4Y" firstAttribute="leading" secondItem="erm-jd-m25" secondAttribute="trailing" constant="12" id="dWD-mk-lhc"/>
-                            <constraint firstItem="erm-jd-m25" firstAttribute="leading" secondItem="QlF-lQ-o5i" secondAttribute="leading" constant="8" id="f1d-9v-bHM"/>
-                            <constraint firstItem="E23-66-Lcq" firstAttribute="top" secondItem="QlF-lQ-o5i" secondAttribute="top" constant="28" id="fgG-Vi-1cy"/>
-                            <constraint firstItem="LsC-40-n4Y" firstAttribute="top" secondItem="E23-66-Lcq" secondAttribute="bottom" constant="8" symbolic="YES" id="kMy-72-4AJ"/>
-                            <constraint firstItem="erm-jd-m25" firstAttribute="top" secondItem="QlF-lQ-o5i" secondAttribute="top" constant="10" id="xBd-lc-GNn"/>
+                            <constraint firstAttribute="bottom" secondItem="erm-jd-m25" secondAttribute="bottom" constant="15" id="9l7-OU-U5K"/>
+                            <constraint firstItem="erm-jd-m25" firstAttribute="top" secondItem="QlF-lQ-o5i" secondAttribute="top" constant="16" id="PM3-Ed-HJ0"/>
+                            <constraint firstItem="E23-66-Lcq" firstAttribute="leading" secondItem="erm-jd-m25" secondAttribute="trailing" constant="15" id="VAW-eU-Duu"/>
+                            <constraint firstItem="E23-66-Lcq" firstAttribute="top" secondItem="QlF-lQ-o5i" secondAttribute="top" constant="28" id="VKU-oi-ua1"/>
+                            <constraint firstItem="erm-jd-m25" firstAttribute="leading" secondItem="QlF-lQ-o5i" secondAttribute="leading" constant="21" id="czr-fh-RwP"/>
+                            <constraint firstItem="LsC-40-n4Y" firstAttribute="top" secondItem="E23-66-Lcq" secondAttribute="bottom" id="gSx-ur-fQV"/>
+                            <constraint firstItem="LsC-40-n4Y" firstAttribute="leading" secondItem="erm-jd-m25" secondAttribute="trailing" constant="15" id="qZ4-SU-7hY"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="QlF-lQ-o5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="26B-bH-LbX"/>
-                    <constraint firstAttribute="bottom" secondItem="QlF-lQ-o5i" secondAttribute="bottom" id="Spy-Ke-hhK"/>
-                    <constraint firstAttribute="trailing" secondItem="QlF-lQ-o5i" secondAttribute="trailing" id="eP4-Wb-W26"/>
-                    <constraint firstItem="QlF-lQ-o5i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rgN-1b-2DT"/>
+                    <constraint firstAttribute="bottom" secondItem="QlF-lQ-o5i" secondAttribute="bottom" constant="12" id="3w6-a0-lGc"/>
+                    <constraint firstItem="QlF-lQ-o5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="C9F-BL-oiR"/>
+                    <constraint firstAttribute="trailing" secondItem="QlF-lQ-o5i" secondAttribute="trailing" constant="20" id="UUj-57-pDa"/>
+                    <constraint firstItem="QlF-lQ-o5i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zhz-gb-Zcv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -65,6 +69,7 @@
                 <outlet property="monsterDescription" destination="LsC-40-n4Y" id="GaK-bX-Ol0"/>
                 <outlet property="monsterImage" destination="erm-jd-m25" id="Vit-T7-L4p"/>
                 <outlet property="monsterName" destination="E23-66-Lcq" id="25T-dQ-kLZ"/>
+                <outlet property="view" destination="QlF-lQ-o5i" id="Z7K-gn-XMw"/>
             </connections>
             <point key="canvasLocation" x="-165.21739130434784" y="53.571428571428569"/>
         </tableViewCell>

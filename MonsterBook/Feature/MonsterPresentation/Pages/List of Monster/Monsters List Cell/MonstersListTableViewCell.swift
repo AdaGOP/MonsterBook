@@ -12,10 +12,11 @@ class MonstersListTableViewCell: UITableViewCell {
     @IBOutlet weak var monsterImage: UIImageView!
     @IBOutlet weak var monsterName: UILabel!
     @IBOutlet weak var monsterDescription: UILabel!
+    @IBOutlet weak var view: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.cornerRadius = 18
+        view.layer.cornerRadius = 18
         
     }
 
