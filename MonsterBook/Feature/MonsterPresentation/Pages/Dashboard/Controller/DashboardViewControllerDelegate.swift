@@ -15,6 +15,7 @@ protocol DashboardViewControllerDelegate {
 extension DashboardViewController: DashboardViewControllerDelegate {
     func monsterCategoryDidTap(type: MonsterType) {
         print("\(type.rawValue)")
+        self.performSegue(withIdentifier: "toListofMonsters", sender: type)
     }
     
     func favoriteMonsterDidTap(monster: Monster) {
