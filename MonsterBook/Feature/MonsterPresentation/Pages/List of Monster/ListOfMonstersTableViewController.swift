@@ -16,6 +16,8 @@ class ListOfMonstersTableViewController: UITableViewController {
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "MonstersListTableViewCell", bundle: nil), forCellReuseIdentifier: "monsterListCell")
+        
+        self.tableView.separatorColor = .clear
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
