@@ -35,20 +35,20 @@ struct MonsterRepository {
 }
 
 extension MonsterType {
-    func getColor() -> UIColor {
+    func getColor() -> UIColor? {
         switch self {
         case .fire:
-            return #colorLiteral(red: 0.7599080205, green: 0, blue: 0, alpha: 1)
+            return UIColor(named: "MBRed")
         case .water:
-            return #colorLiteral(red: 0.5810584426, green: 0.1285524964, blue: 0.5745313764, alpha: 1)
+            return UIColor(named: "MBPurple")
         case .earth:
-            return #colorLiteral(red: 0.5787474513, green: 0.3215198815, blue: 0, alpha: 1)
+            return UIColor(named: "MBBrown")
         case .air:
-            return #colorLiteral(red: 0, green: 0.05284054577, blue: 0.7854793072, alpha: 1)
+            return UIColor(named: "MBBlue")
         case .metal:
-            return #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
+            return UIColor(named: "MBGray")
         case .tree:
-            return #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+            return UIColor(named: "MBGreen")
         }
     }
 }
