@@ -7,16 +7,12 @@
 
 import UIKit
 
-protocol CellDelegate {
-    func performSegueFromCell(myData dataobject: AnyObject)
-}
-
 class CategoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
 
     var categories: [MonsterType]?
-    var delegate: DashboardViewControllerDelegate?
+    var delegate: CategoryCollectionViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,11 +25,5 @@ class CategoryTableViewCell: UITableViewCell {
         
     }
 
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-    
 }
 

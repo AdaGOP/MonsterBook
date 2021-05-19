@@ -26,7 +26,7 @@ extension CategoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let category = categories?[indexPath.row] else { return }
-        delegate?.monsterCategoryDidTap(type: category)
+        delegate?.categoryDidTap(type: category)
     }
     
     

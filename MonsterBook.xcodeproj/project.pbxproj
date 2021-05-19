@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C03A3DD2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A3DB2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift */; };
-		2C03A3DE2652957C00A71F1D /* FavoriteMonsterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3DC2652957C00A71F1D /* FavoriteMonsterTableViewCell.xib */; };
+		2C03A3DD2652957C00A71F1D /* ItemMonsterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A3DB2652957C00A71F1D /* ItemMonsterTableViewCell.swift */; };
+		2C03A3DE2652957C00A71F1D /* ItemMonsterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3DC2652957C00A71F1D /* ItemMonsterTableViewCell.xib */; };
 		2C03A3EA26529E5700A71F1D /* ListOfMonstersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */; };
 		2C03A3ED26529EA300A71F1D /* ListOfMonsters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */; };
 		2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */; };
@@ -19,8 +19,6 @@
 		2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */; };
 		2C75FA31264B99C40074C779 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */; };
 		2C75FA41264C3D150074C779 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA40264C3D140074C779 /* Monster.swift */; };
-		2C75FA60264C437C0074C779 /* MonstersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA5E264C437C0074C779 /* MonstersListTableViewCell.swift */; };
-		2C75FA61264C437C0074C779 /* MonstersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75FA5F264C437C0074C779 /* MonstersListTableViewCell.xib */; };
 		2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5FC682649A94500E4DE59 /* CategoryTableViewCell.swift */; };
 		2CC5FC6B2649A94500E4DE59 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5FC692649A94500E4DE59 /* CategoryTableViewCell.xib */; };
 		2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF96CA326499A88005A7B9F /* AppDelegate.swift */; };
@@ -34,14 +32,15 @@
 		55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF226539497004F7C30 /* DashboardViewController.swift */; };
 		55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF926539E65004F7C30 /* UINib+Loader.swift */; };
 		55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DFC26539E9D004F7C30 /* NetworkManager.swift */; };
-		55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */; };
-		55240E012653A33C004F7C30 /* DashboardViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */; };
+		55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift */; };
+		55240E012653A33C004F7C30 /* DashboardViewController+CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240E002653A33C004F7C30 /* DashboardViewController+CellDelegate.swift */; };
 		55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240E022653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift */; };
+		55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C03A3DB2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMonsterTableViewCell.swift; sourceTree = "<group>"; };
-		2C03A3DC2652957C00A71F1D /* FavoriteMonsterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteMonsterTableViewCell.xib; sourceTree = "<group>"; };
+		2C03A3DB2652957C00A71F1D /* ItemMonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMonsterTableViewCell.swift; sourceTree = "<group>"; };
+		2C03A3DC2652957C00A71F1D /* ItemMonsterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemMonsterTableViewCell.xib; sourceTree = "<group>"; };
 		2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMonstersTableViewController.swift; sourceTree = "<group>"; };
 		2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfMonsters.storyboard; sourceTree = "<group>"; };
 		2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederStaticDataStore.swift; sourceTree = "<group>"; };
@@ -52,8 +51,6 @@
 		2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C75FA40264C3D140074C779 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
-		2C75FA5E264C437C0074C779 /* MonstersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersListTableViewCell.swift; sourceTree = "<group>"; };
-		2C75FA5F264C437C0074C779 /* MonstersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonstersListTableViewCell.xib; sourceTree = "<group>"; };
 		2CC5FC682649A94500E4DE59 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		2CC5FC692649A94500E4DE59 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		2CF96CA026499A88005A7B9F /* MonsterBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,9 +66,10 @@
 		55240DF226539497004F7C30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		55240DF926539E65004F7C30 /* UINib+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Loader.swift"; sourceTree = "<group>"; };
 		55240DFC26539E9D004F7C30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+DataSource+Delegate.swift"; sourceTree = "<group>"; };
-		55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewControllerDelegate.swift; sourceTree = "<group>"; };
+		55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+DataSource+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		55240E002653A33C004F7C30 /* DashboardViewController+CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardViewController+CellDelegate.swift"; sourceTree = "<group>"; };
 		55240E022653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryTableViewCell+CollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +86,7 @@
 		2C255A90264A2E3100CAA2E0 /* Category Cell */ = {
 			isa = PBXGroup;
 			children = (
+				55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */,
 				2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */,
 				2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */,
 			);
@@ -115,6 +114,7 @@
 		2C6A2E3C264D654400D4FAA6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				55E3DC542654F3A3002D499B /* ItemMonstersCell */,
 				2C6A2E41264D658D00D4FAA6 /* DeleteButton.swift */,
 			);
 			path = UI;
@@ -139,9 +139,8 @@
 		2C75FA3C264C37390074C779 /* List of Monster */ = {
 			isa = PBXGroup;
 			children = (
-				2C75FA63264C43850074C779 /* Monsters List Cell */,
-				2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */,
-				2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */,
+				55E3DC592655053F002D499B /* Controller */,
+				55E3DC5A26550548002D499B /* View */,
 			);
 			path = "List of Monster";
 			sourceTree = "<group>";
@@ -163,15 +162,6 @@
 			path = "Monster Details";
 			sourceTree = "<group>";
 		};
-		2C75FA63264C43850074C779 /* Monsters List Cell */ = {
-			isa = PBXGroup;
-			children = (
-				2C75FA5E264C437C0074C779 /* MonstersListTableViewCell.swift */,
-				2C75FA5F264C437C0074C779 /* MonstersListTableViewCell.xib */,
-			);
-			path = "Monsters List Cell";
-			sourceTree = "<group>";
-		};
 		2CC5FC5F2649A2AC00E4DE59 /* Category Collections */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,15 +171,6 @@
 				2CC5FC692649A94500E4DE59 /* CategoryTableViewCell.xib */,
 			);
 			path = "Category Collections";
-			sourceTree = "<group>";
-		};
-		2CC5FC602649A2D300E4DE59 /* Favorite Monster Cell */ = {
-			isa = PBXGroup;
-			children = (
-				2C03A3DB2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift */,
-				2C03A3DC2652957C00A71F1D /* FavoriteMonsterTableViewCell.xib */,
-			);
-			path = "Favorite Monster Cell";
 			sourceTree = "<group>";
 		};
 		2CF96C9726499A88005A7B9F = {
@@ -284,7 +265,6 @@
 			children = (
 				2CF96CA926499A88005A7B9F /* Dashboard.storyboard */,
 				2CC5FC5F2649A2AC00E4DE59 /* Category Collections */,
-				2CC5FC602649A2D300E4DE59 /* Favorite Monster Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,8 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				55240DF226539497004F7C30 /* DashboardViewController.swift */,
-				55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift */,
-				55240E002653A33C004F7C30 /* DashboardViewControllerDelegate.swift */,
+				55240DFE2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift */,
+				55240E002653A33C004F7C30 /* DashboardViewController+CellDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +293,31 @@
 				55240DFC26539E9D004F7C30 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		55E3DC542654F3A3002D499B /* ItemMonstersCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C03A3DB2652957C00A71F1D /* ItemMonsterTableViewCell.swift */,
+				2C03A3DC2652957C00A71F1D /* ItemMonsterTableViewCell.xib */,
+			);
+			path = ItemMonstersCell;
+			sourceTree = "<group>";
+		};
+		55E3DC592655053F002D499B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C03A3E926529E5700A71F1D /* ListOfMonstersTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55E3DC5A26550548002D499B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C75FA61264C437C0074C779 /* MonstersListTableViewCell.xib in Resources */,
-				2C03A3DE2652957C00A71F1D /* FavoriteMonsterTableViewCell.xib in Resources */,
+				2C03A3DE2652957C00A71F1D /* ItemMonsterTableViewCell.xib in Resources */,
 				2C386BC2264E1C480082F4B7 /* MonsterDetails.storyboard in Resources */,
 				2C67DCAB2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf in Resources */,
 				2C75FA31264B99C40074C779 /* CategoryCollectionViewCell.xib in Resources */,
@@ -393,18 +397,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */,
-				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+Delegate.swift in Sources */,
+				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift in Sources */,
 				55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */,
 				2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */,
-				55240E012653A33C004F7C30 /* DashboardViewControllerDelegate.swift in Sources */,
+				55240E012653A33C004F7C30 /* DashboardViewController+CellDelegate.swift in Sources */,
 				55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */,
-				2C03A3DD2652957C00A71F1D /* FavoriteMonsterTableViewCell.swift in Sources */,
+				2C03A3DD2652957C00A71F1D /* ItemMonsterTableViewCell.swift in Sources */,
 				55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */,
 				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
 				2C75FA41264C3D150074C779 /* Monster.swift in Sources */,
 				2CF96CA626499A88005A7B9F /* SceneDelegate.swift in Sources */,
-				2C75FA60264C437C0074C779 /* MonstersListTableViewCell.swift in Sources */,
 				55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */,
+				55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */,
 				2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */,
 				55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */,
 				2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */,

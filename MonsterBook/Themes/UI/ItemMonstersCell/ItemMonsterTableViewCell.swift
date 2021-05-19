@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FavoriteMonsterTableViewCell: UITableViewCell {
+class ItemMonsterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var monsterImage: UIImageView!
     @IBOutlet weak var monsterNameLabel: UILabel!
@@ -22,11 +22,9 @@ class FavoriteMonsterTableViewCell: UITableViewCell {
     
     private func setupView() {
         mView.layer.cornerRadius = 8
-        mView.backgroundColor = .brown
-        
+        mView.backgroundColor = monster?.type?.getColor()
         monsterNameLabel.text = monster?.name
-        monsterTypeLabel.text = "Test label"
-        
+        monsterTypeLabel.text = monster?.type?.rawValue
     }
     
 }

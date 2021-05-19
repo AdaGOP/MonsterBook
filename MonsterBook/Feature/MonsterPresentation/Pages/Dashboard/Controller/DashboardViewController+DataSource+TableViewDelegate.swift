@@ -29,7 +29,7 @@ extension DashboardViewController: UITableViewDataSource {
         if section == 0 {
             return 1
         }else {
-            return monsters?.count ?? 0
+            return favoriteMonster?.count ?? 0
         }
     }
     
@@ -42,9 +42,9 @@ extension DashboardViewController: UITableViewDataSource {
             return cell
         }else {
             let cell = dashboardTableView.dequeueReusableCell(
-                withIdentifier: "favoriteMonsterCell", for: indexPath) as! FavoriteMonsterTableViewCell
+                withIdentifier: "itemMonsterCell", for: indexPath) as! ItemMonsterTableViewCell
             cell.selectionStyle = .none
-            cell.monster = monsters?[indexPath.row]
+            cell.monster = favoriteMonster?[indexPath.row]
             
             return cell
         }
@@ -64,7 +64,7 @@ extension DashboardViewController: UITableViewDataSource {
 extension DashboardViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            print(monsters?[indexPath.row].name)
+            print(monsterRepository.monsters[indexPath.row].name)
         }
     }
 }

@@ -17,11 +17,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
     func setupView() {
         self.layer.cornerRadius = 16
         self.backgroundColor = type?.getColor()
