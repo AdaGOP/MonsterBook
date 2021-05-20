@@ -18,18 +18,18 @@ enum MonsterType: String {
 }
 
 class Monster {
+    let id: String = UUID().uuidString
     var name: String?
     var age: Int?
     var description: String?
     var type: MonsterType?
-    var image: UIImage?
-    var isFavorite: Bool?
+    var isFavorite: Bool
     
-    init(name: String, age: Int, description: String, type: MonsterType, image: UIImage) {
+    init(name: String?, age: Int?, description: String?, type: MonsterType) {
         self.name = name
+        self.description = description
         self.age = age
         self.type = type
-        self.image = image
         self.isFavorite = false
     }
     

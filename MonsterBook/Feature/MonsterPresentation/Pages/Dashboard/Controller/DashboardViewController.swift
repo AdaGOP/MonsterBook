@@ -9,11 +9,9 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     
-    @IBOutlet weak var dashboardTableView: UITableView!
+    @IBOutlet weak var dashboardView: DashboardView!
     
-    var monsterRepository = MonsterRepository(
-        staticDataStore: SeederStaticDataStore()
-    )
+    let monsterRepository = MonsterRepository.shared
     var favoriteMonster: [Monster]?
     
     override func viewDidLoad() {
@@ -21,30 +19,34 @@ class DashboardViewController: UIViewController {
         
         maintainData()
         
-        dashboardTableView.dataSource = self
-        dashboardTableView.delegate = self
+        dashboardView.setup(delegate: self)
         
-        dashboardTableView.registerCell(type: CategoryTableViewCell.self, identifier: "categoryCollectionCell")
-        
-        dashboardTableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
-        
+        dashboardView.dashboardTableView.dataSource = self
+        dashboardView.dashboardTableView.delegate = self
     }
     
     func maintainData() {
-        favoriteMonster = monsterRepository.monsters.filter({ monster in
-            monster.isFavorite ?? false
+        favoriteMonster =
+            monsterRepository.getMonsters().filter({ monster in
+            monster.isFavorite
         })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toListofMonsters" {
-            guard let destination = segue.destination as? ListOfMonstersTableViewController,
-                  let type = sender as? MonsterType else { return }
+            guard
+                let destination = segue.destination as? ListOfMonstersTableViewController,
+                let type = sender as? MonsterType else { return }
             destination.monsterType = type
-            
-            /// Because of we only used static data, we need to pass the repository, if you are already
-            /// use Core Data, its not necessary to pass the repository
-            destination.monsterRepository = monsterRepository
+            destination.monsterDetailDelegate = self
+        }else if segue.identifier == "toMonsterDetailToAdd" {
+            guard let destination = segue.destination as? MonsterDetailViewController else { return }
+            destination.delegate = self
+        }else if segue.identifier == "toMonsterDetail" {
+            guard
+                let destination = segue.destination as? MonsterDetailViewController,
+                let monster = sender as? Monster  else { return }
+            destination.monster = monster
         }
     }
     

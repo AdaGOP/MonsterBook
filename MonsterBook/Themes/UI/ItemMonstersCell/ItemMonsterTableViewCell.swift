@@ -25,6 +25,7 @@ class ItemMonsterTableViewCell: UITableViewCell {
         mView.backgroundColor = monster?.type?.getColor()
         monsterNameLabel.text = monster?.name
         monsterTypeLabel.text = monster?.type?.rawValue
+        monsterImage.image = monster?.type?.getImage()
     }
     
 }

@@ -35,13 +35,13 @@ extension DashboardViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            let cell = dashboardTableView.dequeueReusableCell(
+            let cell = dashboardView.dashboardTableView.dequeueReusableCell(
                 withIdentifier: "categoryCollectionCell", for: indexPath) as! CategoryTableViewCell
             cell.categories = monsterRepository.monsterType
             cell.delegate = self
             return cell
         }else {
-            let cell = dashboardTableView.dequeueReusableCell(
+            let cell = dashboardView.dashboardTableView.dequeueReusableCell(
                 withIdentifier: "itemMonsterCell", for: indexPath) as! ItemMonsterTableViewCell
             cell.selectionStyle = .none
             cell.monster = favoriteMonster?[indexPath.row]
@@ -57,14 +57,12 @@ extension DashboardViewController: UITableViewDataSource {
             return 136
         }
     }
-    
-    
 }
 
 extension DashboardViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            print(monsterRepository.monsters[indexPath.row].name)
+            performSegue(withIdentifier: "toMonsterDetail", sender: favoriteMonster?[indexPath.row])
         }
     }
 }

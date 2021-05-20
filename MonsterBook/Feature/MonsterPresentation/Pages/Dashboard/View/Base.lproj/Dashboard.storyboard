@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xr-nW-N4L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xr-nW-N4L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <scene sceneID="p8s-Sg-Od4">
             <objects>
                 <viewController id="nkK-Uh-LPL" customClass="DashboardViewController" customModule="MonsterBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NFV-jj-qjI">
+                    <view key="view" contentMode="scaleToFill" id="NFV-jj-qjI" customClass="DashboardView" customModule="MonsterBook" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8JY-Q2-Yt4">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8JY-Q2-Yt4" id="zuH-ty-87S">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -39,16 +39,37 @@
                             <constraint firstItem="lie-aQ-stg" firstAttribute="top" secondItem="7CA-O0-87c" secondAttribute="top" id="kSn-jN-pgQ"/>
                             <constraint firstItem="lie-aQ-stg" firstAttribute="trailing" secondItem="7CA-O0-87c" secondAttribute="trailing" id="qa7-r0-awb"/>
                         </constraints>
+                        <connections>
+                            <outlet property="dashboardTableView" destination="lie-aQ-stg" id="3I3-42-6NV"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Monsters" largeTitleDisplayMode="always" id="IGh-Hf-k7T"/>
+                    <navigationItem key="navigationItem" title="Monsters" largeTitleDisplayMode="always" id="IGh-Hf-k7T">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Jrb-yC-i4E">
+                            <connections>
+                                <action selector="addButtonDidTap" destination="NFV-jj-qjI" id="AYg-rD-ito"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="dashboardTableView" destination="lie-aQ-stg" id="k4u-t6-pwB"/>
+                        <outlet property="dashboardView" destination="NFV-jj-qjI" id="mqI-AX-vqh"/>
                         <segue destination="O0h-qB-LhT" kind="show" identifier="toListofMonsters" id="4Fe-Vp-Sqd"/>
+                        <segue destination="QIK-ch-hp0" kind="show" identifier="toMonsterDetail" id="PgZ-7a-2EC"/>
+                        <segue destination="QIK-ch-hp0" kind="presentation" identifier="toMonsterDetailToAdd" id="g1Z-5C-dkw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMK-JR-T6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1538" y="1152"/>
+            <point key="canvasLocation" x="1067" y="716"/>
+        </scene>
+        <!--MonsterDetail-->
+        <scene sceneID="89q-CS-RRd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MonsterDetail" id="QIK-ch-hp0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pXX-oN-k6x"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsd-dj-Q39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="716"/>
         </scene>
         <!--ListOfMonsters-->
         <scene sceneID="flV-uu-iSI">
@@ -58,7 +79,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKn-nQ-Y9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="1152"/>
+            <point key="canvasLocation" x="1067" y="1337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bcy-sM-HYN">
@@ -76,9 +97,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6A-nU-Sg5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="1152"/>
+            <point key="canvasLocation" x="113" y="716"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PgZ-7a-2EC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

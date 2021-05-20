@@ -7,24 +7,37 @@
 
 import UIKit
 
-struct MonsterRepository {
+class MonsterRepository {
     
     var staticDataStore: SeederStaticDataStore
     var coreDataStore: SeederCoreDataStore?
     var networkDataStore: SeederNetworkDataStore?
     
-    
     let monsterType: [MonsterType] = [
         .fire, .water, .earth, .air, .metal, .tree
     ]
     
-    var monsters: [Monster] {
-        get {
-            staticDataStore.seedMonster()
+    var monsters: [Monster]?
+    
+    func getMonsters() -> [Monster] {
+        if monsters == nil {
+            self.monsters = staticDataStore.seedMonster()
         }
+        return monsters ?? []
     }
     
-    init(staticDataStore: SeederStaticDataStore,
+    func add(monster: Monster) {
+        monsters?.append(monster)
+    }
+    
+    func update(monster: Monster) {
+        guard let index = monsters?.firstIndex(where: { $0.id == monster.id}) else { return }
+        monsters?[index] = monster
+    }
+    
+    static let shared = MonsterRepository(staticDataStore: SeederStaticDataStore())
+    
+    private init(staticDataStore: SeederStaticDataStore,
          coreDataStore: SeederCoreDataStore? = nil,
          networkDataStore: SeederNetworkDataStore? = nil) {
         
@@ -38,17 +51,34 @@ extension MonsterType {
     func getColor() -> UIColor? {
         switch self {
         case .fire:
-            return UIColor(named: "MBRed")
+            return MBColor().red
         case .water:
-            return UIColor(named: "MBPurple")
+            return MBColor().purple
         case .earth:
-            return UIColor(named: "MBBrown")
+            return MBColor().brown
         case .air:
-            return UIColor(named: "MBBlue")
+            return MBColor().blue
         case .metal:
-            return UIColor(named: "MBGray")
+            return MBColor().gray
         case .tree:
-            return UIColor(named: "MBGreen")
+            return MBColor().green
+        }
+    }
+    
+    func getImage() -> UIImage {
+        switch self {
+        case .fire:
+            return #imageLiteral(resourceName: "Monster Merah")
+        case .water:
+            return #imageLiteral(resourceName: "Monster Biru Muda")
+        case .earth:
+            return #imageLiteral(resourceName: "Monster Kuning Bulet")
+        case .air:
+            return #imageLiteral(resourceName: "Monster Ungu Bulet")
+        case .metal:
+            return #imageLiteral(resourceName: "Monster Hitam")
+        case .tree:
+            return #imageLiteral(resourceName: "Monster Pohon")
         }
     }
 }

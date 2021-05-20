@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="monsterImageCell" rowHeight="210" id="KGk-i7-Jjw" customClass="MonsterImageTableViewCell" customModule="MonsterBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iY-JL-mkb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monster Biru Muda" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-iQ-Wlh">
+                                <rect key="frame" x="100.5" y="19" width="174" height="172"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMU-gw-Wob">
+                                <rect key="frame" x="240.5" y="159.5" width="34" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31.5" id="7mC-yg-puL"/>
+                                    <constraint firstAttribute="width" constant="34" id="qfX-QR-169"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoriteButtonDidTap" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mot-CY-BEV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eMU-gw-Wob" firstAttribute="bottom" secondItem="AXq-iQ-Wlh" secondAttribute="bottom" id="3z3-qC-Nrg"/>
+                            <constraint firstItem="AXq-iQ-Wlh" firstAttribute="top" secondItem="0iY-JL-mkb" secondAttribute="top" constant="19" id="5HS-5v-deT"/>
+                            <constraint firstAttribute="bottom" secondItem="AXq-iQ-Wlh" secondAttribute="bottom" constant="19" id="Hf6-1Q-PhH"/>
+                            <constraint firstItem="AXq-iQ-Wlh" firstAttribute="leading" secondItem="0iY-JL-mkb" secondAttribute="leading" constant="100.5" id="ci1-2F-G2D"/>
+                            <constraint firstAttribute="trailing" secondItem="AXq-iQ-Wlh" secondAttribute="trailing" constant="100.5" id="lmI-bD-m5M"/>
+                            <constraint firstItem="eMU-gw-Wob" firstAttribute="trailing" secondItem="AXq-iQ-Wlh" secondAttribute="trailing" id="twK-3H-Y4b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0iY-JL-mkb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0jI-Me-nPW"/>
+                    <constraint firstAttribute="bottom" secondItem="0iY-JL-mkb" secondAttribute="bottom" id="7LU-un-Owv"/>
+                    <constraint firstAttribute="trailing" secondItem="0iY-JL-mkb" secondAttribute="trailing" id="I5l-Rt-YHI"/>
+                    <constraint firstItem="0iY-JL-mkb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="raA-bY-Z5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likeButton" destination="eMU-gw-Wob" id="Wpm-0a-tTk"/>
+                <outlet property="monsterImage" destination="AXq-iQ-Wlh" id="iyj-7e-5MM"/>
+            </connections>
+            <point key="canvasLocation" x="-62.318840579710148" y="183.48214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Monster Biru Muda" width="83" height="116"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LOP-VP-VPb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Monster Detail View Controller-->
+        <scene sceneID="hEk-9W-aYz">
+            <objects>
+                <viewController id="LOP-VP-VPb" customClass="MonsterDetailViewController" customModule="MonsterBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8q2-4x-Qtk" customClass="MonsterDetailView" customModule="MonsterBook" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2OQ-QE-25p">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jP-r8-4VP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CEE-bg-Wjv"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem largeTitleDisplayMode="never" id="IM2-4J-ggO">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="3LC-y5-fQB">
+                                            <connections>
+                                                <action selector="cancelAddMonsterDidTap" destination="8q2-4x-Qtk" id="My7-aq-6fz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="AU2-bo-p24">
+                                            <connections>
+                                                <action selector="addMonsterDidTap" destination="8q2-4x-Qtk" id="YAv-sI-Lgj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ubK-23-P1i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9jP-r8-4VP" firstAttribute="trailing" secondItem="ubK-23-P1i" secondAttribute="trailing" id="5NG-Wq-kaB"/>
+                            <constraint firstItem="2OQ-QE-25p" firstAttribute="top" secondItem="9jP-r8-4VP" secondAttribute="bottom" id="643-An-PmW"/>
+                            <constraint firstItem="9jP-r8-4VP" firstAttribute="leading" secondItem="ubK-23-P1i" secondAttribute="leading" id="Vqz-PQ-p80"/>
+                            <constraint firstItem="2OQ-QE-25p" firstAttribute="leading" secondItem="ubK-23-P1i" secondAttribute="leading" id="crI-Ms-5Qm"/>
+                            <constraint firstItem="2OQ-QE-25p" firstAttribute="top" secondItem="ubK-23-P1i" secondAttribute="top" priority="999" id="eUs-QS-kkV"/>
+                            <constraint firstItem="2OQ-QE-25p" firstAttribute="trailing" secondItem="ubK-23-P1i" secondAttribute="trailing" id="kYs-5q-LoV"/>
+                            <constraint firstItem="9jP-r8-4VP" firstAttribute="top" secondItem="ubK-23-P1i" secondAttribute="top" id="qSg-0t-xwG"/>
+                            <constraint firstItem="2OQ-QE-25p" firstAttribute="bottom" secondItem="ubK-23-P1i" secondAttribute="bottom" id="t5B-Ci-b9g"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="monsterDetailNavigationBar" destination="9jP-r8-4VP" id="a7V-qH-kkn"/>
+                            <outlet property="monsterDetailTableView" destination="2OQ-QE-25p" id="JHU-Hz-czI"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="monsterDetailView" destination="8q2-4x-Qtk" id="35V-46-VfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEf-Dz-mGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
