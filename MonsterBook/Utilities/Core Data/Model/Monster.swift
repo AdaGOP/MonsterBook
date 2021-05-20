@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum MonsterType: String {
     case fire = "Fire"
@@ -21,12 +22,14 @@ class Monster {
     var age: Int?
     var description: String?
     var type: MonsterType?
+    var image: UIImage?
     var isFavorite: Bool?
     
-    init(name: String, age: Int, description: String, type: MonsterType) {
+    init(name: String, age: Int, description: String, type: MonsterType, image: UIImage) {
         self.name = name
         self.age = age
         self.type = type
+        self.image = image
         self.isFavorite = false
     }
     

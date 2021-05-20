@@ -16,6 +16,12 @@
 		2C386BC5264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */; };
 		2C67DCAB2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */; };
 		2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A2E41264D658D00D4FAA6 /* DeleteButton.swift */; };
+		2C75B74726556A1C00D5BC75 /* MonsterImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75B74526556A1C00D5BC75 /* MonsterImageTableViewCell.swift */; };
+		2C75B74826556A1C00D5BC75 /* MonsterImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75B74626556A1C00D5BC75 /* MonsterImageTableViewCell.xib */; };
+		2C75B74D2655712E00D5BC75 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75B74B2655712E00D5BC75 /* TextFieldTableViewCell.swift */; };
+		2C75B74E2655712E00D5BC75 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75B74C2655712E00D5BC75 /* TextFieldTableViewCell.xib */; };
+		2C75B752265576EE00D5BC75 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75B750265576EE00D5BC75 /* TextViewTableViewCell.swift */; };
+		2C75B753265576EE00D5BC75 /* TextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75B751265576EE00D5BC75 /* TextViewTableViewCell.xib */; };
 		2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */; };
 		2C75FA31264B99C40074C779 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */; };
 		2C75FA41264C3D150074C779 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75FA40264C3D140074C779 /* Monster.swift */; };
@@ -48,6 +54,12 @@
 		2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailsTableViewController.swift; sourceTree = "<group>"; };
 		2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		2C6A2E41264D658D00D4FAA6 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		2C75B74526556A1C00D5BC75 /* MonsterImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterImageTableViewCell.swift; sourceTree = "<group>"; };
+		2C75B74626556A1C00D5BC75 /* MonsterImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonsterImageTableViewCell.xib; sourceTree = "<group>"; };
+		2C75B74B2655712E00D5BC75 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		2C75B74C2655712E00D5BC75 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		2C75B750265576EE00D5BC75 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		2C75B751265576EE00D5BC75 /* TextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewTableViewCell.xib; sourceTree = "<group>"; };
 		2C75FA2E264B99C40074C779 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2C75FA2F264B99C40074C779 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		2C75FA40264C3D140074C779 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
@@ -114,6 +126,9 @@
 		2C6A2E3C264D654400D4FAA6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2C75B744265569A500D5BC75 /* Text View Cell */,
+				2C75B743265564AD00D5BC75 /* Picker Cell */,
+				2C75B7422655627A00D5BC75 /* Text Field Cell */,
 				55E3DC542654F3A3002D499B /* ItemMonstersCell */,
 				2C6A2E41264D658D00D4FAA6 /* DeleteButton.swift */,
 			);
@@ -136,6 +151,57 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
+		2C75B73F2655610000D5BC75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C75B7412655616600D5BC75 /* Monster Image Cell */,
+				2C386BC1264E1C480082F4B7 /* MonsterDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C75B7402655610500D5BC75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C75B7412655616600D5BC75 /* Monster Image Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C75B74526556A1C00D5BC75 /* MonsterImageTableViewCell.swift */,
+				2C75B74626556A1C00D5BC75 /* MonsterImageTableViewCell.xib */,
+			);
+			path = "Monster Image Cell";
+			sourceTree = "<group>";
+		};
+		2C75B7422655627A00D5BC75 /* Text Field Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C75B74B2655712E00D5BC75 /* TextFieldTableViewCell.swift */,
+				2C75B74C2655712E00D5BC75 /* TextFieldTableViewCell.xib */,
+			);
+			path = "Text Field Cell";
+			sourceTree = "<group>";
+		};
+		2C75B743265564AD00D5BC75 /* Picker Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Picker Cell";
+			sourceTree = "<group>";
+		};
+		2C75B744265569A500D5BC75 /* Text View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2C75B750265576EE00D5BC75 /* TextViewTableViewCell.swift */,
+				2C75B751265576EE00D5BC75 /* TextViewTableViewCell.xib */,
+			);
+			path = "Text View Cell";
+			sourceTree = "<group>";
+		};
 		2C75FA3C264C37390074C779 /* List of Monster */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +222,8 @@
 		2C75FA57264C41EC0074C779 /* Monster Details */ = {
 			isa = PBXGroup;
 			children = (
-				2C386BC1264E1C480082F4B7 /* MonsterDetails.storyboard */,
-				2C386BC4264E1C6C0082F4B7 /* MonsterDetailsTableViewController.swift */,
+				2C75B7402655610500D5BC75 /* Controller */,
+				2C75B73F2655610000D5BC75 /* View */,
 			);
 			path = "Monster Details";
 			sourceTree = "<group>";
@@ -378,13 +444,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C03A3DE2652957C00A71F1D /* ItemMonsterTableViewCell.xib in Resources */,
+				2C75B753265576EE00D5BC75 /* TextViewTableViewCell.xib in Resources */,
 				2C386BC2264E1C480082F4B7 /* MonsterDetails.storyboard in Resources */,
 				2C67DCAB2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf in Resources */,
+				2C75B74E2655712E00D5BC75 /* TextFieldTableViewCell.xib in Resources */,
 				2C75FA31264B99C40074C779 /* CategoryCollectionViewCell.xib in Resources */,
 				2C03A3ED26529EA300A71F1D /* ListOfMonsters.storyboard in Resources */,
 				2CF96CB026499A88005A7B9F /* LaunchScreen.storyboard in Resources */,
 				2CF96CAD26499A88005A7B9F /* Assets.xcassets in Resources */,
 				2CF96CAB26499A88005A7B9F /* Dashboard.storyboard in Resources */,
+				2C75B74826556A1C00D5BC75 /* MonsterImageTableViewCell.xib in Resources */,
 				2CC5FC6B2649A94500E4DE59 /* CategoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +470,9 @@
 				55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */,
 				2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */,
 				55240E012653A33C004F7C30 /* DashboardViewController+CellDelegate.swift in Sources */,
+				2C75B74D2655712E00D5BC75 /* TextFieldTableViewCell.swift in Sources */,
 				55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */,
+				2C75B752265576EE00D5BC75 /* TextViewTableViewCell.swift in Sources */,
 				2C03A3DD2652957C00A71F1D /* ItemMonsterTableViewCell.swift in Sources */,
 				55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */,
 				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
@@ -412,6 +483,7 @@
 				2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */,
 				55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */,
 				2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */,
+				2C75B74726556A1C00D5BC75 /* MonsterImageTableViewCell.swift in Sources */,
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
 				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersTableViewController.swift in Sources */,

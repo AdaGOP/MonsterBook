@@ -24,8 +24,6 @@ class ListOfMonstersTableViewController: UITableViewController {
         tableView.dataSource = self
         
         tableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
-        
-        self.tableView.separatorColor = .clear
     }
     
     func maintainData() {
@@ -48,6 +46,7 @@ class ListOfMonstersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(typedMonsters?[indexPath.row].name)
+        performSegue(withIdentifier: "toMonsterDetails", sender: typedMonsters?[indexPath.row])
     }
     
 }
