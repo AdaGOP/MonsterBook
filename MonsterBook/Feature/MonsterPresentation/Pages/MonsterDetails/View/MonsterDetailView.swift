@@ -22,6 +22,8 @@ class MonsterDetailView: UIView {
         monsterDetailTableView.registerCell(type: TextFieldTableViewCell.self, identifier: "textFieldCell")
         
         monsterDetailTableView.registerCell(type: TextViewTableViewCell.self, identifier: "textViewCell")
+        
+        monsterDetailTableView.registerCell(type: PickerViewTableViewCell.self, identifier: "pickerViewCell")
     }
     
     @IBAction func cancelAddMonsterDidTap() {

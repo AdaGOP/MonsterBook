@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum MonsterType: String {
+enum MonsterType: String, CaseIterable {
     case fire = "Fire"
     case water = "Water"
     case earth = "Earth"

@@ -52,6 +52,10 @@ extension MonsterDetailViewController: UITableViewDataSource {
             
             return cell
         case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "pickerViewCell", for: indexPath) as! PickerViewTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "textViewCell", for: indexPath) as! TextViewTableViewCell
             cell.selectionStyle = .none
             cell.setEnable(isEnable: isAbleToEdit)
@@ -71,9 +75,9 @@ extension MonsterDetailViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             return 210
-        case 1,2:
+        case 1,2,3:
             return 45
-        case 3:
+        case 4:
             return 200
         default:
             return 0
