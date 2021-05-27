@@ -1,57 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pickerViewCell" rowHeight="45" id="4yd-XP-ksb" customClass="PickerViewTableViewCell" customModule="MonsterBook" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pickerViewCell" rowHeight="75" id="4yd-XP-ksb" customClass="PickerViewTableViewCell" customModule="MonsterBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4yd-XP-ksb" id="8VZ-81-bwL">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hG1-yi-W2C">
-                        <rect key="frame" x="16" y="8" width="288" height="34"/>
+                        <rect key="frame" x="16" y="8" width="351" height="59"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0D-X5-j32">
-                                <rect key="frame" x="0.0" y="7" width="78" height="21"/>
+                                <rect key="frame" x="0.0" y="19" width="37" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="FAG-gK-338"/>
-                                    <constraint firstAttribute="width" constant="78" id="zxt-ou-tqZ"/>
+                                    <constraint firstAttribute="height" constant="21" id="FEG-xW-9JH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDC-pb-kTX">
-                                <rect key="frame" x="101" y="-3" width="190" height="37"/>
+                                <rect key="frame" x="161" y="0.0" width="190" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="190" id="QSx-ut-APv"/>
-                                    <constraint firstAttribute="height" constant="37" id="tyM-Ai-i6g"/>
+                                    <constraint firstAttribute="width" constant="190" id="3hQ-Ly-7wW"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q0D-X5-j32" firstAttribute="top" secondItem="hG1-yi-W2C" secondAttribute="top" constant="7" id="ATV-iP-Uq9"/>
-                            <constraint firstItem="ZDC-pb-kTX" firstAttribute="leading" secondItem="q0D-X5-j32" secondAttribute="trailing" constant="23" id="OFi-hW-lRe"/>
-                            <constraint firstItem="q0D-X5-j32" firstAttribute="leading" secondItem="hG1-yi-W2C" secondAttribute="leading" id="khf-Hy-ryA"/>
-                            <constraint firstItem="ZDC-pb-kTX" firstAttribute="top" secondItem="hG1-yi-W2C" secondAttribute="top" constant="-3" id="tUr-Sv-Tq5"/>
+                            <constraint firstItem="q0D-X5-j32" firstAttribute="centerY" secondItem="hG1-yi-W2C" secondAttribute="centerY" id="1fD-Up-p15"/>
+                            <constraint firstAttribute="trailing" secondItem="ZDC-pb-kTX" secondAttribute="trailing" id="EVy-FC-CKm"/>
+                            <constraint firstAttribute="bottom" secondItem="ZDC-pb-kTX" secondAttribute="bottom" id="WIv-uI-dcc"/>
+                            <constraint firstItem="q0D-X5-j32" firstAttribute="leading" secondItem="hG1-yi-W2C" secondAttribute="leading" id="y4S-Hr-Zb2"/>
+                            <constraint firstItem="ZDC-pb-kTX" firstAttribute="top" secondItem="hG1-yi-W2C" secondAttribute="top" id="zQm-Kb-ulC"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="hG1-yi-W2C" firstAttribute="top" secondItem="8VZ-81-bwL" secondAttribute="top" constant="8" id="1J5-2O-Fem"/>
-                    <constraint firstAttribute="trailing" secondItem="hG1-yi-W2C" secondAttribute="trailing" constant="16" id="AyO-D9-heu"/>
-                    <constraint firstItem="hG1-yi-W2C" firstAttribute="leading" secondItem="8VZ-81-bwL" secondAttribute="leading" constant="16" id="IHL-ar-5Hz"/>
-                    <constraint firstAttribute="bottom" secondItem="q0D-X5-j32" secondAttribute="bottom" constant="14" id="UxS-JR-jPe"/>
-                    <constraint firstAttribute="bottom" secondItem="hG1-yi-W2C" secondAttribute="bottom" constant="8" id="hPY-Mz-UBl"/>
+                    <constraint firstAttribute="bottom" secondItem="hG1-yi-W2C" secondAttribute="bottom" constant="8" id="5hQ-jY-fOK"/>
+                    <constraint firstItem="hG1-yi-W2C" firstAttribute="top" secondItem="8VZ-81-bwL" secondAttribute="top" constant="8" id="8DS-oT-KMF"/>
+                    <constraint firstAttribute="trailing" secondItem="hG1-yi-W2C" secondAttribute="trailing" constant="8" id="K65-iG-dRH"/>
+                    <constraint firstItem="hG1-yi-W2C" firstAttribute="leading" secondItem="8VZ-81-bwL" secondAttribute="leading" constant="16" id="j9c-25-ImU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="MTv-Q9-K0W"/>

@@ -34,7 +34,7 @@ class MonsterDetailViewController: UIViewController {
             self.navigationItem.rightBarButtonItem = self.editButtonItem
             isAbleToEdit = false
         }else {
-            monster = Monster(name: nil, age: nil, description: nil, type: .earth)
+            monster = Monster(name: nil, age: nil, description: nil, type: .fire)
         }
     }
     

@@ -21,12 +21,24 @@ extension MonsterDetailViewController: MonsterDetailViewDelegate {
     }
 }
 
+extension MonsterDetailViewController {
+    func refreshCell(at index: Int) {
+        let indexPath = IndexPath(item: index, section: 0)
+        monsterDetailView.monsterDetailTableView.reloadRows(at: [indexPath], with: .fade)
+    }
+}
+
 extension MonsterDetailViewController: MonsterImageTableViewCellDelegate {
     func favoriteButtonDidTap() {
         guard let isFavorite = monster?.isFavorite else { return }
         monster?.isFavorite = !isFavorite
-        
-        let indexPath = IndexPath(item: 0, section: 0)
-        monsterDetailView.monsterDetailTableView.reloadRows(at: [indexPath], with: .none)
+        refreshCell(at: 0)
+    }
+}
+
+extension MonsterDetailViewController: PickerViewTableViewCellDelegate {
+    func valueDidSet(type: MonsterType) {
+        monster?.type = type
+        refreshCell(at: 0)
     }
 }

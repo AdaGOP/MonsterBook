@@ -9,7 +9,7 @@ import UIKit
 
 extension MonsterDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
 
     // MARK: - Table view data source
@@ -53,6 +53,11 @@ extension MonsterDetailViewController: UITableViewDataSource {
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "pickerViewCell", for: indexPath) as! PickerViewTableViewCell
+            cell.setEnable(isEnable: isAbleToEdit)
+            cell.setLabel(text: "Type")
+            cell.delegate = self
+            guard let type = monster?.type else { return cell }
+            cell.setType(is: type)
             cell.selectionStyle = .none
             return cell
         case 4:
@@ -75,10 +80,12 @@ extension MonsterDetailViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             return 210
-        case 1,2,3:
-            return 45
+        case 1,2:
+            return 55
+        case 3:
+            return 105
         case 4:
-            return 200
+            return 1000
         default:
             return 0
         }

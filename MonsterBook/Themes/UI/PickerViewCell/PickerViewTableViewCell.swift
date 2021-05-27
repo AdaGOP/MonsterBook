@@ -7,11 +7,17 @@
 
 import UIKit
 
-class PickerViewTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerViewDelegate {
+class PickerViewTableViewCell: UITableViewCell {
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var formLabel: UILabel!
     @IBOutlet weak var formView: UIView!
+    
+    var delegate: PickerViewTableViewCellDelegate?
+    
+    func setup(delegate: PickerViewTableViewCellDelegate) {
+        self.delegate = delegate
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +29,27 @@ class PickerViewTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPicker
         formLabel.text = text
     }
     
+    func setType(is type: MonsterType) {
+        guard let index = MonsterType.allCases.firstIndex(of: type) else { return }
+        pickerView.selectRow(index, inComponent: 0, animated: true)
+    }
+    
+    func setEnable(isEnable: Bool) {
+        pickerView.isUserInteractionEnabled = isEnable
+        if isEnable {
+            pickerView.alpha = 1
+        }else {
+            pickerView.alpha = 0.5
+        }
+    }
+    
+}
+
+extension PickerViewTableViewCell: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return MonsterType.allCases.count
     }
@@ -31,8 +58,8 @@ class PickerViewTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPicker
         return MonsterType.allCases[row].rawValue
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        delegate?.valueDidSet(type: MonsterType.allCases[row])
     }
     
 }

@@ -9,18 +9,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="45" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="MonsterBook" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="55" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="MonsterBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grD-J9-93a">
-                        <rect key="frame" x="16" y="8" width="288" height="34"/>
+                        <rect key="frame" x="16" y="8" width="288" height="39"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aep-E4-Pqv">
-                                <rect key="frame" x="0.0" y="6.5" width="56" height="21"/>
+                                <rect key="frame" x="0.0" y="9" width="56" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="8SZ-9G-bJY"/>
                                     <constraint firstAttribute="height" constant="21" id="NoU-Eo-T0g"/>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2u-pP-YFU">
-                                <rect key="frame" x="103" y="0.0" width="185" height="34"/>
+                                <rect key="frame" x="103" y="2.5" width="185" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="GTG-tV-mU7"/>
                                     <constraint firstAttribute="height" constant="34" id="VDf-Uk-31w"/>
