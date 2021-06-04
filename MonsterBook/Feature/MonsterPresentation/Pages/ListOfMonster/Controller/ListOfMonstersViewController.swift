@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ListOfMonstersTableViewController: UITableViewController {
+class ListOfMonstersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var monsterListTableView: UITableView!
     
     let monsterRepository = MonsterRepository.shared
     var monsterType: MonsterType?
@@ -19,10 +21,10 @@ class ListOfMonstersTableViewController: UITableViewController {
         
         maintainData()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        monsterListTableView.delegate = self
+        monsterListTableView.dataSource = self
         
-        tableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
+        monsterListTableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
     }
     
     private func maintainData() {
@@ -40,11 +42,11 @@ class ListOfMonstersTableViewController: UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return typedMonsters?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemMonsterCell", for: indexPath) as! ItemMonsterTableViewCell
 
         cell.monster = typedMonsters?[indexPath.row]
@@ -52,7 +54,7 @@ class ListOfMonstersTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toMonsterDetails", sender: typedMonsters?[indexPath.row])
     }
     
