@@ -22,7 +22,7 @@
         <scene sceneID="4iA-zl-zNX">
             <objects>
                 <viewController id="g7S-MU-YAG" customClass="ListOfMonstersViewController" customModule="MonsterBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bs4-34-r7f">
+                    <view key="view" contentMode="scaleToFill" id="Bs4-34-r7f" customClass="ListOfMonstersView" customModule="MonsterBook" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -39,10 +39,13 @@
                             <constraint firstItem="DVm-Ia-Oo2" firstAttribute="bottom" secondItem="5Ks-c2-1GW" secondAttribute="bottom" id="pWF-Ez-Wvr"/>
                             <constraint firstItem="DVm-Ia-Oo2" firstAttribute="trailing" secondItem="5Ks-c2-1GW" secondAttribute="trailing" id="rVi-9U-jm6"/>
                         </constraints>
+                        <connections>
+                            <outlet property="monsterListTableView" destination="5Ks-c2-1GW" id="4Hd-xX-bxR"/>
+                        </connections>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="monsterListTableView" destination="5Ks-c2-1GW" id="ptx-y1-DSk"/>
+                        <outlet property="listOfMonstersView" destination="Bs4-34-r7f" id="qbS-QU-1Zc"/>
                         <segue destination="c7d-gQ-Pzc" kind="show" identifier="toMonsterDetails" id="JI5-Uf-vby"/>
                     </connections>
                 </viewController>

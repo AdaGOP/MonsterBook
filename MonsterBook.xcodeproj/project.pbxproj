@@ -55,6 +55,8 @@
 		559ECD9A2656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */; };
 		559ECD9C2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */; };
 		55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */; };
+		55E57D542669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57D532669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift */; };
+		55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57D552669F2670087CCEC /* ListOfMonstersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterImageTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailViewControllerDelegate.swift; sourceTree = "<group>"; };
 		55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
+		55E57D532669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListOfMonstersViewController+DataSource+Delegate.swift"; sourceTree = "<group>"; };
+		55E57D552669F2670087CCEC /* ListOfMonstersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMonstersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				2C03A3E926529E5700A71F1D /* ListOfMonstersViewController.swift */,
+				55E57D532669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */,
+				55E57D552669F2670087CCEC /* ListOfMonstersView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 				554C2C272656274400714E2E /* DashboardView.swift in Sources */,
 				2C721DBE265C08540010A2B0 /* PickerViewTableViewCell.swift in Sources */,
 				554C2C2B26562B8800714E2E /* DashboardViewController+Delegate.swift in Sources */,
+				55E57D542669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift in Sources */,
 				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift in Sources */,
 				55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */,
 				2CF96CA426499A88005A7B9F /* AppDelegate.swift in Sources */,
@@ -544,6 +551,7 @@
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
 				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersViewController.swift in Sources */,
+				55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */,
 				554C2C3026563EA200714E2E /* MonsterDetailView.swift in Sources */,
 				554C2C2926562A8800714E2E /* DashboardViewDelegate.swift in Sources */,
 				2C386BC5264E1C6C0082F4B7 /* MonsterDetailViewController.swift in Sources */,

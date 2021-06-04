@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ListOfMonstersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ListOfMonstersViewController: UIViewController {
     
-    @IBOutlet weak var monsterListTableView: UITableView!
+    @IBOutlet weak var listOfMonstersView: ListOfMonstersView!
     
     let monsterRepository = MonsterRepository.shared
+    
     var monsterType: MonsterType?
     var typedMonsters: [Monster]?
     var monsterDetailDelegate: MonsterDetailViewControllerDelegate?
@@ -20,11 +21,7 @@ class ListOfMonstersViewController: UIViewController, UITableViewDataSource, UIT
         super.viewDidLoad()
         
         maintainData()
-        
-        monsterListTableView.delegate = self
-        monsterListTableView.dataSource = self
-        
-        monsterListTableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
+        listOfMonstersView.setup(viewController: self)
         
         navigationItem.title = monsterType?.rawValue
     }
@@ -42,22 +39,6 @@ class ListOfMonstersViewController: UIViewController, UITableViewDataSource, UIT
             destination.monster = monster
             destination.delegate = monsterDetailDelegate
         }
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return typedMonsters?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "itemMonsterCell", for: indexPath) as! ItemMonsterTableViewCell
-
-        cell.monster = typedMonsters?[indexPath.row]
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toMonsterDetails", sender: typedMonsters?[indexPath.row])
     }
     
 }
