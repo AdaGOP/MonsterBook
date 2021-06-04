@@ -25,6 +25,8 @@ class ListOfMonstersViewController: UIViewController, UITableViewDataSource, UIT
         monsterListTableView.dataSource = self
         
         monsterListTableView.registerCell(type: ItemMonsterTableViewCell.self, identifier: "itemMonsterCell")
+        
+        navigationItem.title = monsterType?.rawValue
     }
     
     private func maintainData() {
