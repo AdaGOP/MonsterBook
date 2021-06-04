@@ -35,7 +35,7 @@ class DashboardViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toListofMonsters" {
             guard
-                let destination = segue.destination as? ListOfMonstersTableViewController,
+                let destination = segue.destination as? ListOfMonstersViewController,
                 let type = sender as? MonsterType else { return }
             destination.monsterType = type
             destination.monsterDetailDelegate = self
