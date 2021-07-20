@@ -26,6 +26,16 @@ class ItemMonsterTableViewCell: UITableViewCell {
         monsterNameLabel.text = monster?.name
         monsterTypeLabel.text = monster?.type?.rawValue
         monsterImage.image = monster?.type?.getImage()
+        
+        applyAccessibility()
+    }
+    
+    private func applyAccessibility() {
+        guard let name = monster?.name,
+              let type = monster?.type?.rawValue else { return }
+        self.accessibilityLabel = "\(name) with \(type)'s type."
+        self.accessibilityHint = "Double tap to read \(name) detail"
+        
     }
     
 }

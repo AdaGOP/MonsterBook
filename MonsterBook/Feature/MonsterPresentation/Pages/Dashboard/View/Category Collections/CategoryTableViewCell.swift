@@ -23,6 +23,7 @@ class CategoryTableViewCell: UITableViewCell {
         /// Register NIB for collection view cell
         categoryCollectionView.registerCell(type: CategoryCollectionViewCell.self, identifier: "categoryCell")
         
+        self.isAccessibilityElement = false
     }
 
 }

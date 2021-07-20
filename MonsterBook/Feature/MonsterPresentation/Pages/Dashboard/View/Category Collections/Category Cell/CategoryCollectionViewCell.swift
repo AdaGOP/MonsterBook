@@ -21,6 +21,15 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 16
         self.backgroundColor = type?.getColor()
         categoryLabel.text = type?.rawValue
+        
+        applyAccessibility()
+    }
+    
+    func applyAccessibility() {
+        guard let value = type?.rawValue else { return }
+        self.isAccessibilityElement = true
+        self.accessibilityLabel = value
+        self.accessibilityHint = "Double tap to discover \(value) monsters"
     }
 
 }
