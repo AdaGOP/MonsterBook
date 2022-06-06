@@ -59,6 +59,7 @@
 		55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57D552669F2670087CCEC /* ListOfMonstersView.swift */; };
 		7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */; };
 		7D0F96B6284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */; };
+		7D0F96B8284DFF8B006DFD99 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		7D0F96A7284DF635006DFD99 /* MonsterBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepositoryTests.swift; sourceTree = "<group>"; };
 		7D0F96B5284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterBookDataModel.xcdatamodel; sourceTree = "<group>"; };
+		7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		2C6A2E46264D663100D4FAA6 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */,
 				7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */,
 				2C75FA3F264C3C750074C779 /* Model */,
 			);
@@ -631,6 +634,7 @@
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
 				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersViewController.swift in Sources */,
+				7D0F96B8284DFF8B006DFD99 /* CoreDataManager.swift in Sources */,
 				55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */,
 				554C2C3026563EA200714E2E /* MonsterDetailView.swift in Sources */,
 				554C2C2926562A8800714E2E /* DashboardViewDelegate.swift in Sources */,
