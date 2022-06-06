@@ -20,9 +20,17 @@ class MonsterRepository {
     var monsters: [Monster]?
     
     func getMonsters() -> [Monster] {
-        if monsters == nil {
-            self.monsters = staticDataStore.seedMonster()
+        if let unWrapMonsters = monsters { return unWrapMonsters }
+        
+        if coreDataStore != nil{
+            monsters = coreDataStore?.seedMonster()
+        }else
+        if networkDataStore != nil{
+            monsters = networkDataStore?.seedMonster()
+        }else{
+            monsters = staticDataStore.seedMonster()
         }
+        
         return monsters ?? []
     }
     
