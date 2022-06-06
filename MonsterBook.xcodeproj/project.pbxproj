@@ -60,6 +60,8 @@
 		7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */; };
 		7D0F96B6284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */; };
 		7D0F96B8284DFF8B006DFD99 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */; };
+		7D0F96BB284E0E9B006DFD99 /* MonsterFirstEvolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96BA284E0E9B006DFD99 /* MonsterFirstEvolution.swift */; };
+		7D0F96BE284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96BD284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,8 @@
 		7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepositoryTests.swift; sourceTree = "<group>"; };
 		7D0F96B5284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterBookDataModel.xcdatamodel; sourceTree = "<group>"; };
 		7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7D0F96BA284E0E9B006DFD99 /* MonsterFirstEvolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterFirstEvolution.swift; sourceTree = "<group>"; };
+		7D0F96BD284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterFirstEvolutionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				2C75FA40264C3D140074C779 /* Monster.swift */,
+				7D0F96BA284E0E9B006DFD99 /* MonsterFirstEvolution.swift */,
 				7D0F96B3284DFE36006DFD99 /* Repository */,
 				55240DEC265388B0004F7C30 /* DataStore */,
 			);
@@ -462,6 +467,7 @@
 		7D0F96A8284DF635006DFD99 /* MonsterBookTests */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F96BC284E0F38006DFD99 /* Model Test */,
 				7D0F96B9284E0632006DFD99 /* Helper Test */,
 				7D0F96B2284DF660006DFD99 /* Repository Test */,
 			);
@@ -489,6 +495,14 @@
 			children = (
 			);
 			path = "Helper Test";
+			sourceTree = "<group>";
+		};
+		7D0F96BC284E0F38006DFD99 /* Model Test */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F96BD284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift */,
+			);
+			path = "Model Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,6 +618,7 @@
 				55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */,
 				554C2C272656274400714E2E /* DashboardView.swift in Sources */,
 				2C721DBE265C08540010A2B0 /* PickerViewTableViewCell.swift in Sources */,
+				7D0F96BB284E0E9B006DFD99 /* MonsterFirstEvolution.swift in Sources */,
 				554C2C2B26562B8800714E2E /* DashboardViewController+Delegate.swift in Sources */,
 				55E57D542669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift in Sources */,
 				55240DFF2653A02B004F7C30 /* DashboardViewController+DataSource+TableViewDelegate.swift in Sources */,
@@ -648,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */,
+				7D0F96BE284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

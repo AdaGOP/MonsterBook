@@ -14,4 +14,5 @@ struct MBColor{
     let blue = UIColor(named: "MBBlue")
     let gray = UIColor(named: "MBGray")
     let green = UIColor(named: "MBGreen")
+    
 }

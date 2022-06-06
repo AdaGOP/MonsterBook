@@ -33,5 +33,19 @@ class Monster {
         self.isFavorite = false
     }
     
+    func evolve() -> MonsterFirstEvolution?  {
+        guard let unwrapType = type else { return nil }
+        let numberOfClaw: Int = {
+            switch unwrapType {
+            case .fire,.water,.earth:
+                return 5
+            case .air, .metal , .tree:
+                return 1
+            }
+        }()
+        return MonsterFirstEvolution(monster: self, numberOfClaw: numberOfClaw)
+    }
 }
+
+
 
