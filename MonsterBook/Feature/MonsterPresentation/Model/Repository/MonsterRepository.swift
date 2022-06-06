@@ -46,7 +46,7 @@ class MonsterRepository {
         self.networkDataStore = networkDataStore
     }
 }
-
+    
 extension MonsterType {
     func getColor() -> UIColor? {
         switch self {

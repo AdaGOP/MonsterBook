@@ -57,7 +57,19 @@
 		55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */; };
 		55E57D542669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57D532669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift */; };
 		55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E57D552669F2670087CCEC /* ListOfMonstersView.swift */; };
+		7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */; };
+		7D0F96B6284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D0F96AB284DF635006DFD99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CF96C9826499A88005A7B9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CF96C9F26499A88005A7B9F;
+			remoteInfo = MonsterBook;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2C03A3DB2652957C00A71F1D /* ItemMonsterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMonsterTableViewCell.swift; sourceTree = "<group>"; };
@@ -112,10 +124,20 @@
 		55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		55E57D532669F2450087CCEC /* ListOfMonstersViewController+DataSource+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListOfMonstersViewController+DataSource+Delegate.swift"; sourceTree = "<group>"; };
 		55E57D552669F2670087CCEC /* ListOfMonstersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMonstersView.swift; sourceTree = "<group>"; };
+		7D0F96A7284DF635006DFD99 /* MonsterBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepositoryTests.swift; sourceTree = "<group>"; };
+		7D0F96B5284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterBookDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2CF96C9D26499A88005A7B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D0F96A4284DF635006DFD99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,6 +199,7 @@
 		2C6A2E46264D663100D4FAA6 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */,
 				2C75FA3F264C3C750074C779 /* Model */,
 			);
 			path = "Core Data";
@@ -244,7 +267,6 @@
 		2C75FA3F264C3C750074C779 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C75FA40264C3D140074C779 /* Monster.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF96CA226499A88005A7B9F /* MonsterBook */,
+				7D0F96A8284DF635006DFD99 /* MonsterBookTests */,
 				2CF96CA126499A88005A7B9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -281,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF96CA026499A88005A7B9F /* MonsterBook.app */,
+				7D0F96A7284DF635006DFD99 /* MonsterBookTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,8 +316,8 @@
 				2C6A2E39264D651000D4FAA6 /* Themes */,
 				55240DF826539E57004F7C30 /* Helper */,
 				2C6A2E3B264D651C00D4FAA6 /* Utilities */,
-				2CF96CA326499A88005A7B9F /* AppDelegate.swift */,
 				2CF96CA526499A88005A7B9F /* SceneDelegate.swift */,
+				2CF96CA326499A88005A7B9F /* AppDelegate.swift */,
 				2CF96CAC26499A88005A7B9F /* Assets.xcassets */,
 				2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */,
 				2CF96CB126499A88005A7B9F /* Info.plist */,
@@ -331,8 +355,9 @@
 		55240DE7265387ED004F7C30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C75FA40264C3D140074C779 /* Monster.swift */,
+				7D0F96B3284DFE36006DFD99 /* Repository */,
 				55240DEC265388B0004F7C30 /* DataStore */,
-				55240DED265388EA004F7C30 /* MonsterRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +464,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7D0F96A8284DF635006DFD99 /* MonsterBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F96B2284DF660006DFD99 /* Repository Test */,
+			);
+			path = MonsterBookTests;
+			sourceTree = "<group>";
+		};
+		7D0F96B2284DF660006DFD99 /* Repository Test */ = {
+			isa = PBXGroup;
+			children = (
+				7D0F96B0284DF650006DFD99 /* MonsterRepositoryTests.swift */,
+			);
+			path = "Repository Test";
+			sourceTree = "<group>";
+		};
+		7D0F96B3284DFE36006DFD99 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				55240DED265388EA004F7C30 /* MonsterRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,17 +508,39 @@
 			productReference = 2CF96CA026499A88005A7B9F /* MonsterBook.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7D0F96A6284DF635006DFD99 /* MonsterBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0F96AD284DF635006DFD99 /* Build configuration list for PBXNativeTarget "MonsterBookTests" */;
+			buildPhases = (
+				7D0F96A3284DF635006DFD99 /* Sources */,
+				7D0F96A4284DF635006DFD99 /* Frameworks */,
+				7D0F96A5284DF635006DFD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D0F96AC284DF635006DFD99 /* PBXTargetDependency */,
+			);
+			name = MonsterBookTests;
+			productName = MonsterBookTests;
+			productReference = 7D0F96A7284DF635006DFD99 /* MonsterBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2CF96C9826499A88005A7B9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					2CF96C9F26499A88005A7B9F = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					7D0F96A6284DF635006DFD99 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2CF96C9F26499A88005A7B9F;
 					};
 				};
 			};
@@ -487,6 +558,7 @@
 			projectRoot = "";
 			targets = (
 				2CF96C9F26499A88005A7B9F /* MonsterBook */,
+				7D0F96A6284DF635006DFD99 /* MonsterBookTests */,
 			);
 		};
 /* End PBXProject section */
@@ -512,6 +584,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D0F96A5284DF635006DFD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -534,6 +613,7 @@
 				2C03A3DD2652957C00A71F1D /* ItemMonsterTableViewCell.swift in Sources */,
 				554C2C3426563FD600714E2E /* MonsterDetailViewController+TableViewDataSource+Delegate.swift in Sources */,
 				554C2C3226563F1600714E2E /* MonsterDetailViewDelegate.swift in Sources */,
+				7D0F96B6284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld in Sources */,
 				55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */,
 				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
 				5561D513265F606C00CA588D /* PickerViewTableViewCellDelegate.swift in Sources */,
@@ -559,7 +639,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D0F96A3284DF635006DFD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D0F96AC284DF635006DFD99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CF96C9F26499A88005A7B9F /* MonsterBook */;
+			targetProxy = 7D0F96AB284DF635006DFD99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2CF96CA926499A88005A7B9F /* Dashboard.storyboard */ = {
@@ -735,6 +831,56 @@
 			};
 			name = Release;
 		};
+		7D0F96AE284DF635006DFD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK45DE64XX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus.MonsterBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonsterBook.app/MonsterBook";
+			};
+			name = Debug;
+		};
+		7D0F96AF284DF635006DFD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZK45DE64XX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AppleDeveloperAcademyBinus.MonsterBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonsterBook.app/MonsterBook";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,7 +902,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7D0F96AD284DF635006DFD99 /* Build configuration list for PBXNativeTarget "MonsterBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0F96AE284DF635006DFD99 /* Debug */,
+				7D0F96AF284DF635006DFD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D0F96B5284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodel */,
+			);
+			currentVersion = 7D0F96B5284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodel */;
+			path = MonsterBookDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2CF96C9826499A88005A7B9F /* Project object */;
 }
