@@ -9,10 +9,6 @@ import Foundation
 
 struct SeederStaticDataStore{
     
-    let monsterType: [MonsterType] = [
-        .fire, .water, .earth, .air, .metal, .tree
-    ]
-    
     func seedMonster() -> [Monster] {
         var arrMons = [Monster]()
         

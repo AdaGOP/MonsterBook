@@ -203,7 +203,6 @@
 			children = (
 				7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */,
 				7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */,
-				2C75FA3F264C3C750074C779 /* Model */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -265,13 +264,6 @@
 				55E3DC5A26550548002D499B /* View */,
 			);
 			path = ListOfMonster;
-			sourceTree = "<group>";
-		};
-		2C75FA3F264C3C750074C779 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2C75FA57264C41EC0074C779 /* MonsterDetails */ = {
@@ -470,6 +462,7 @@
 		7D0F96A8284DF635006DFD99 /* MonsterBookTests */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F96B9284E0632006DFD99 /* Helper Test */,
 				7D0F96B2284DF660006DFD99 /* Repository Test */,
 			);
 			path = MonsterBookTests;
@@ -489,6 +482,13 @@
 				55240DED265388EA004F7C30 /* MonsterRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		7D0F96B9284E0632006DFD99 /* Helper Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helper Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,26 +7,40 @@
 
 import UIKit
 
+protocol MonsterRepositoryDataStore{
+    func seedMonster() -> [Monster]?
+}
+
 class MonsterRepository {
     
+    var dynamicDataStore: MonsterRepositoryDataStore!
     var staticDataStore: SeederStaticDataStore
+    
+    /*
     var coreDataStore: SeederCoreDataStore?
     var networkDataStore: SeederNetworkDataStore?
-    
+    */
     let monsterType: [MonsterType] = [
         .fire, .water, .earth, .air, .metal, .tree
     ]
     
     var monsters: [Monster]?
     
+    static let shared = MonsterRepository(staticDataStore: SeederStaticDataStore())
+    
+    private init(staticDataStore: SeederStaticDataStore) {
+        self.staticDataStore = staticDataStore
+    }
+    
+    public func addDataStore(_ dynamicDataStore: MonsterRepositoryDataStore){
+        self.dynamicDataStore = dynamicDataStore
+    }
+    
     func getMonsters() -> [Monster] {
         if let unWrapMonsters = monsters { return unWrapMonsters }
         
-        if coreDataStore != nil{
-            monsters = coreDataStore?.seedMonster()
-        }else
-        if networkDataStore != nil{
-            monsters = networkDataStore?.seedMonster()
+        if dynamicDataStore != nil{
+            monsters = dynamicDataStore?.seedMonster()
         }else{
             monsters = staticDataStore.seedMonster()
         }
@@ -41,17 +55,6 @@ class MonsterRepository {
     func update(monster: Monster) {
         guard let index = monsters?.firstIndex(where: { $0.id == monster.id}) else { return }
         monsters?[index] = monster
-    }
-    
-    static let shared = MonsterRepository(staticDataStore: SeederStaticDataStore())
-    
-    private init(staticDataStore: SeederStaticDataStore,
-         coreDataStore: SeederCoreDataStore? = nil,
-         networkDataStore: SeederNetworkDataStore? = nil) {
-        
-        self.staticDataStore = staticDataStore
-        self.coreDataStore = coreDataStore
-        self.networkDataStore = networkDataStore
     }
 }
     

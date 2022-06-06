@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 
-struct SeederCoreDataStore {
+struct SeederCoreDataStore: MonsterRepositoryDataStore{
     
     let context = CoreDataManager.shared.context
     
