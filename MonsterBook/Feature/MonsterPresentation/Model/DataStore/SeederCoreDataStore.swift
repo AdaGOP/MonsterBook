@@ -16,7 +16,6 @@ struct SeederCoreDataStore: MonsterRepositoryDataStore{
     func seedMonster() -> [Monster]?{
         
         let cdMonsterRequest: NSFetchRequest = CDMonster.fetchRequest()
-        
         guard let cdMonsters = try? context.fetch(cdMonsterRequest) else { return nil }
         
         let monsters: [Monster] = cdMonsters.compactMap { cdMonster -> Monster? in
@@ -34,8 +33,6 @@ struct SeederCoreDataStore: MonsterRepositoryDataStore{
                 type: monsterType
             )
         }
-        
-        
         return monsters
     }
 }

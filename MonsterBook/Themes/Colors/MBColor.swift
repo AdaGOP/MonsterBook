@@ -8,11 +8,13 @@
 import UIKit
 
 struct MBColor{
-    let red = UIColor(named: "MBRed")
-    let purple = UIColor(named: "MBPurple")
-    let brown = UIColor(named: "MBBrown")
-    let blue = UIColor(named: "MBBlue")
-    let gray = UIColor(named: "MBGray")
-    let green = UIColor(named: "MBGreen")
-    
+    static let red = UIColor(named: "MBRed")
+    static let purple = UIColor(named: "MBPurple")
+    static let brown = UIColor(named: "MBBrown")
+    static let blue = UIColor(named: "MBBlue")
+    static let gray = UIColor(named: "MBGray")
+    static let green = UIColor(named: "MBGreen")
+    private init() {}
 }
+
+

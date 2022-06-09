@@ -423,8 +423,8 @@
 			isa = PBXGroup;
 			children = (
 				2C721DBC265C08540010A2B0 /* PickerViewTableViewCell.swift */,
-				2C721DBD265C08540010A2B0 /* PickerViewTableViewCell.xib */,
 				5561D512265F606C00CA588D /* PickerViewTableViewCellDelegate.swift */,
+				2C721DBD265C08540010A2B0 /* PickerViewTableViewCell.xib */,
 			);
 			path = PickerViewCell;
 			sourceTree = "<group>";

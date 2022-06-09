@@ -9,5 +9,4 @@ import Foundation
 import UIKit
 
 class DeleteButton: UIButton {
-    
 }

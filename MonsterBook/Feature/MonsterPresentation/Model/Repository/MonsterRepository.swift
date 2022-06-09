@@ -49,6 +49,7 @@ class MonsterRepository {
     }
     
     func add(monster: Monster) {
+        // Put your business logic here
         monsters?.append(monster)
     }
     
@@ -62,17 +63,17 @@ extension MonsterType {
     func getColor() -> UIColor? {
         switch self {
         case .fire:
-            return MBColor().red
+            return MBColor.red
         case .water:
-            return MBColor().purple
+            return MBColor.purple
         case .earth:
-            return MBColor().brown
+            return MBColor.brown
         case .air:
-            return MBColor().blue
+            return MBColor.blue
         case .metal:
-            return MBColor().gray
+            return MBColor.gray
         case .tree:
-            return MBColor().green
+            return MBColor.green
         }
     }
     
