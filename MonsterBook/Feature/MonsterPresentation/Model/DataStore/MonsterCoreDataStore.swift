@@ -9,14 +9,13 @@ import Foundation
 import CoreData
 
 
-struct SeederCoreDataStore: MonsterRepositoryDataStore{
+struct MonsterCoreDataStore: MonsterRepositoryDataStore {    
     
-    let context = CoreDataManager.shared.context
+    let coreDataManager = CoreDataManager.shared
     
-    func seedMonster() -> [Monster]?{
+    func getMonsters() -> [Monster]? {
         
-        let cdMonsterRequest: NSFetchRequest = CDMonster.fetchRequest()
-        guard let cdMonsters = try? context.fetch(cdMonsterRequest) else { return nil }
+        guard let cdMonsters = try? coreDataManager.fetch(CDMonster.self, process: nil) else { return nil }
         
         let monsters: [Monster] = cdMonsters.compactMap { cdMonster -> Monster? in
             guard

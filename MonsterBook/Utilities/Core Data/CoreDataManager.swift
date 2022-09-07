@@ -24,3 +24,47 @@ class CoreDataManager{
         context = container.viewContext
     }
 }
+
+extension CoreDataManager {
+    func create<CDEntity>(_ entity: CDEntity.Type, process: (CDEntity) -> Void) throws where CDEntity : Storable {
+        process(NSEntityDescription.insertNewObject(forEntityName: "\(CDEntity.self)", into: context) as! CDEntity)
+        try context.save()
+    }
+    
+    func fetch<CDEntity>(_ entity: CDEntity.Type, process: ((NSFetchRequest<NSFetchRequestResult>) -> Void)?) throws -> [CDEntity] where CDEntity : Storable {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "\(CDEntity.self)")
+        process?(fetchRequest)
+        
+        return try context.fetch(fetchRequest) as! [CDEntity]
+    }
+    
+    func update<CDEntity>(_ entity: CDEntity.Type, process: ((NSFetchRequest<NSFetchRequestResult>) -> Void)?, update: ([CDEntity]) -> Void) throws where CDEntity : Storable {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "\(CDEntity.self)")
+        process?(fetchRequest)
+        
+        update(try context.fetch(fetchRequest) as! [CDEntity])
+        try context.save()
+    }
+    
+    func delete<CDEntity>(_ entity: CDEntity.Type, process: ((NSFetchRequest<NSFetchRequestResult>) -> Void)?, deletedObjects: (([CDEntity]) -> Void)?) throws where CDEntity : Storable {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "\(CDEntity.self)")
+        process?(fetchRequest)
+        
+        let objects = try context.fetch(fetchRequest) as! [CDEntity]
+        deletedObjects?(objects)
+        
+        for object in objects {
+            context.delete(object as! NSManagedObject)
+        }
+        
+        try context.save()
+    }
+    
+    
+}
+
+extension CoreDataManager {
+    func save<CDEntity>(entity: CDEntity) {
+        
+    }
+}

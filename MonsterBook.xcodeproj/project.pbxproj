@@ -11,7 +11,7 @@
 		2C03A3DE2652957C00A71F1D /* ItemMonsterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3DC2652957C00A71F1D /* ItemMonsterTableViewCell.xib */; };
 		2C03A3EA26529E5700A71F1D /* ListOfMonstersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A3E926529E5700A71F1D /* ListOfMonstersViewController.swift */; };
 		2C03A3ED26529EA300A71F1D /* ListOfMonsters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */; };
-		2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */; };
+		2C386BBF264E0C690082F4B7 /* MonsterStaticDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BBE264E0C690082F4B7 /* MonsterStaticDataStore.swift */; };
 		2C386BC2264E1C480082F4B7 /* MonsterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C386BC1264E1C480082F4B7 /* MonsterDetail.storyboard */; };
 		2C386BC5264E1C6C0082F4B7 /* MonsterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C386BC4264E1C6C0082F4B7 /* MonsterDetailViewController.swift */; };
 		2C67DCAB2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */; };
@@ -34,7 +34,7 @@
 		2CF96CAB26499A88005A7B9F /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CA926499A88005A7B9F /* Dashboard.storyboard */; };
 		2CF96CAD26499A88005A7B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAC26499A88005A7B9F /* Assets.xcassets */; };
 		2CF96CB026499A88005A7B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */; };
-		55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */; };
+		55240DE92653884C004F7C30 /* MonsterCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */; };
 		55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */; };
 		55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DED265388EA004F7C30 /* MonsterRepository.swift */; };
 		55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF226539497004F7C30 /* DashboardViewController.swift */; };
@@ -52,6 +52,8 @@
 		554C2C362656AF0000714E2E /* MonsterDetailViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C2C352656AF0000714E2E /* MonsterDetailViewController+Delegate.swift */; };
 		554C2C392656B34200714E2E /* MBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C2C382656B34200714E2E /* MBColor.swift */; };
 		5561D513265F606C00CA588D /* PickerViewTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561D512265F606C00CA588D /* PickerViewTableViewCellDelegate.swift */; };
+		5591D99428C201B400B20AD9 /* StorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591D99328C201B400B20AD9 /* StorageContext.swift */; };
+		5591D99828C89CFF00B20AD9 /* CoreDataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */; };
 		559ECD9A2656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */; };
 		559ECD9C2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */; };
 		55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */; };
@@ -79,7 +81,7 @@
 		2C03A3DC2652957C00A71F1D /* ItemMonsterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemMonsterTableViewCell.xib; sourceTree = "<group>"; };
 		2C03A3E926529E5700A71F1D /* ListOfMonstersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMonstersViewController.swift; sourceTree = "<group>"; };
 		2C03A3EC26529EA300A71F1D /* ListOfMonsters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfMonsters.storyboard; sourceTree = "<group>"; };
-		2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederStaticDataStore.swift; sourceTree = "<group>"; };
+		2C386BBE264E0C690082F4B7 /* MonsterStaticDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterStaticDataStore.swift; sourceTree = "<group>"; };
 		2C386BC1264E1C480082F4B7 /* MonsterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonsterDetail.storyboard; sourceTree = "<group>"; };
 		2C386BC4264E1C6C0082F4B7 /* MonsterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailViewController.swift; sourceTree = "<group>"; };
 		2C67DCAA2652D74A00EA1B98 /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 		2CF96CAC26499A88005A7B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF96CAF26499A88005A7B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF96CB126499A88005A7B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederCoreDataStore.swift; sourceTree = "<group>"; };
+		55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCoreDataStore.swift; sourceTree = "<group>"; };
 		55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederNetworkDataStore.swift; sourceTree = "<group>"; };
 		55240DED265388EA004F7C30 /* MonsterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepository.swift; sourceTree = "<group>"; };
 		55240DF226539497004F7C30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,8 @@
 		554C2C352656AF0000714E2E /* MonsterDetailViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MonsterDetailViewController+Delegate.swift"; sourceTree = "<group>"; };
 		554C2C382656B34200714E2E /* MBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBColor.swift; sourceTree = "<group>"; };
 		5561D512265F606C00CA588D /* PickerViewTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		5591D99328C201B400B20AD9 /* StorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContext.swift; sourceTree = "<group>"; };
+		5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTest.swift; sourceTree = "<group>"; };
 		559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterImageTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailViewControllerDelegate.swift; sourceTree = "<group>"; };
 		55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 		2C6A2E46264D663100D4FAA6 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				5591D99128C1B21000B20AD9 /* Entity */,
+				5591D99328C201B400B20AD9 /* StorageContext.swift */,
 				7D0F96B7284DFF8B006DFD99 /* CoreDataManager.swift */,
 				7D0F96B4284DFEDC006DFD99 /* MonsterBookDataModel.xcdatamodeld */,
 			);
@@ -354,8 +360,7 @@
 		55240DE7265387ED004F7C30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C75FA40264C3D140074C779 /* Monster.swift */,
-				7D0F96BA284E0E9B006DFD99 /* MonsterFirstEvolution.swift */,
+				5591D99028C1B07700B20AD9 /* Entity */,
 				7D0F96B3284DFE36006DFD99 /* Repository */,
 				55240DEC265388B0004F7C30 /* DataStore */,
 			);
@@ -365,8 +370,8 @@
 		55240DEC265388B0004F7C30 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				2C386BBE264E0C690082F4B7 /* SeederStaticDataStore.swift */,
-				55240DE82653884C004F7C30 /* SeederCoreDataStore.swift */,
+				2C386BBE264E0C690082F4B7 /* MonsterStaticDataStore.swift */,
+				55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */,
 				55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */,
 			);
 			path = DataStore;
@@ -437,6 +442,46 @@
 			path = Colors;
 			sourceTree = "<group>";
 		};
+		5591D99028C1B07700B20AD9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2C75FA40264C3D140074C779 /* Monster.swift */,
+				7D0F96BA284E0E9B006DFD99 /* MonsterFirstEvolution.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5591D99128C1B21000B20AD9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5591D99228C1B21B00B20AD9 /* Monster */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5591D99228C1B21B00B20AD9 /* Monster */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monster;
+			sourceTree = "<group>";
+		};
+		5591D99528C89CDB00B20AD9 /* Utilities Test */ = {
+			isa = PBXGroup;
+			children = (
+				5591D99628C89CE800B20AD9 /* CoreData */,
+			);
+			path = "Utilities Test";
+			sourceTree = "<group>";
+		};
+		5591D99628C89CE800B20AD9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		55E3DC542654F3A3002D499B /* ItemMonstersCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +512,7 @@
 		7D0F96A8284DF635006DFD99 /* MonsterBookTests */ = {
 			isa = PBXGroup;
 			children = (
+				5591D99528C89CDB00B20AD9 /* Utilities Test */,
 				7D0F96BC284E0F38006DFD99 /* Model Test */,
 				7D0F96B9284E0632006DFD99 /* Helper Test */,
 				7D0F96B2284DF660006DFD99 /* Repository Test */,
@@ -615,7 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55240DE92653884C004F7C30 /* SeederCoreDataStore.swift in Sources */,
+				55240DE92653884C004F7C30 /* MonsterCoreDataStore.swift in Sources */,
 				554C2C272656274400714E2E /* DashboardView.swift in Sources */,
 				2C721DBE265C08540010A2B0 /* PickerViewTableViewCell.swift in Sources */,
 				7D0F96BB284E0E9B006DFD99 /* MonsterFirstEvolution.swift in Sources */,
@@ -635,6 +681,7 @@
 				55240E032653E1F8004F7C30 /* CategoryTableViewCell+CollectionViewDelegate.swift in Sources */,
 				55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */,
 				5561D513265F606C00CA588D /* PickerViewTableViewCellDelegate.swift in Sources */,
+				5591D99428C201B400B20AD9 /* StorageContext.swift in Sources */,
 				2C75FA41264C3D150074C779 /* Monster.swift in Sources */,
 				2CF96CA626499A88005A7B9F /* SceneDelegate.swift in Sources */,
 				55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */,
@@ -647,7 +694,7 @@
 				559ECD9A2656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift in Sources */,
 				2C75B74726556A1C00D5BC75 /* MonsterImageTableViewCell.swift in Sources */,
 				2CC5FC6A2649A94500E4DE59 /* CategoryTableViewCell.swift in Sources */,
-				2C386BBF264E0C690082F4B7 /* SeederStaticDataStore.swift in Sources */,
+				2C386BBF264E0C690082F4B7 /* MonsterStaticDataStore.swift in Sources */,
 				2C03A3EA26529E5700A71F1D /* ListOfMonstersViewController.swift in Sources */,
 				7D0F96B8284DFF8B006DFD99 /* CoreDataManager.swift in Sources */,
 				55E57D562669F2670087CCEC /* ListOfMonstersView.swift in Sources */,
@@ -662,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5591D99828C89CFF00B20AD9 /* CoreDataManagerTest.swift in Sources */,
 				7D0F96B1284DF650006DFD99 /* MonsterRepositoryTests.swift in Sources */,
 				7D0F96BE284E0FA2006DFD99 /* MonsterFirstEvolutionTest.swift in Sources */,
 			);
@@ -819,7 +867,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 665XP63X44;
+				DEVELOPMENT_TEAM = C89FEC543S;
 				INFOPLIST_FILE = MonsterBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,7 +886,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 665XP63X44;
+				DEVELOPMENT_TEAM = C89FEC543S;
 				INFOPLIST_FILE = MonsterBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

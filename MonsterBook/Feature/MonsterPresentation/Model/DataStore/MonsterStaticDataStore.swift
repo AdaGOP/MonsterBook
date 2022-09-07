@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct SeederStaticDataStore{
+struct MonsterStaticDataStore {
     
-    func seedMonster() -> [Monster] {
+    func getMonsters() -> [Monster] {
         var arrMons = [Monster]()
         
         /// Create the monsters

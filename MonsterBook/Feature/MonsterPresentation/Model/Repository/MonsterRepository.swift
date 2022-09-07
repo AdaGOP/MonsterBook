@@ -8,16 +8,16 @@
 import UIKit
 
 protocol MonsterRepositoryDataStore{
-    func seedMonster() -> [Monster]?
+    func getMonsters() -> [Monster]?
 }
 
 class MonsterRepository {
     
     var dynamicDataStore: MonsterRepositoryDataStore!
-    var staticDataStore: SeederStaticDataStore
+    var staticDataStore: MonsterStaticDataStore
     
     /*
-    var coreDataStore: SeederCoreDataStore?
+    var coreDataStore: MonsterCoreDataStore?
     var networkDataStore: SeederNetworkDataStore?
     */
     let monsterType: [MonsterType] = [
@@ -26,9 +26,9 @@ class MonsterRepository {
     
     var monsters: [Monster]?
     
-    static let shared = MonsterRepository(staticDataStore: SeederStaticDataStore())
+    static let shared = MonsterRepository(staticDataStore: MonsterStaticDataStore())
     
-    private init(staticDataStore: SeederStaticDataStore) {
+    private init(staticDataStore: MonsterStaticDataStore) {
         self.staticDataStore = staticDataStore
     }
     
@@ -40,9 +40,9 @@ class MonsterRepository {
         if let unWrapMonsters = monsters { return unWrapMonsters }
         
         if dynamicDataStore != nil{
-            monsters = dynamicDataStore?.seedMonster()
+            monsters = dynamicDataStore?.getMonsters()
         }else{
-            monsters = staticDataStore.seedMonster()
+            monsters = staticDataStore.getMonsters()
         }
         
         return monsters ?? []

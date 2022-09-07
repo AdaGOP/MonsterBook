@@ -8,9 +8,9 @@
 import Foundation
 
 
-struct SeederNetworkDataStore {
+struct NetworkDataStore {
     
-    func seedMonster() -> [Monster]{
+    func getMonster() -> [Monster]{
         return []
     }
     
