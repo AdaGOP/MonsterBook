@@ -35,7 +35,7 @@
 		2CF96CAD26499A88005A7B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAC26499A88005A7B9F /* Assets.xcassets */; };
 		2CF96CB026499A88005A7B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF96CAE26499A88005A7B9F /* LaunchScreen.storyboard */; };
 		55240DE92653884C004F7C30 /* MonsterCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */; };
-		55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */; };
+		55240DEB2653885F004F7C30 /* MonsterNetworkDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DEA2653885F004F7C30 /* MonsterNetworkDataStore.swift */; };
 		55240DEE265388EA004F7C30 /* MonsterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DED265388EA004F7C30 /* MonsterRepository.swift */; };
 		55240DF326539497004F7C30 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF226539497004F7C30 /* DashboardViewController.swift */; };
 		55240DFA26539E65004F7C30 /* UINib+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55240DF926539E65004F7C30 /* UINib+Loader.swift */; };
@@ -54,6 +54,7 @@
 		5561D513265F606C00CA588D /* PickerViewTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561D512265F606C00CA588D /* PickerViewTableViewCellDelegate.swift */; };
 		5591D99428C201B400B20AD9 /* StorageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591D99328C201B400B20AD9 /* StorageContext.swift */; };
 		5591D99828C89CFF00B20AD9 /* CoreDataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */; };
+		5591D99C28C8CB9D00B20AD9 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591D99B28C8CB9D00B20AD9 /* DashboardViewModel.swift */; };
 		559ECD9A2656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */; };
 		559ECD9C2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */; };
 		55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */; };
@@ -107,7 +108,7 @@
 		2CF96CAF26499A88005A7B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF96CB126499A88005A7B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCoreDataStore.swift; sourceTree = "<group>"; };
-		55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeederNetworkDataStore.swift; sourceTree = "<group>"; };
+		55240DEA2653885F004F7C30 /* MonsterNetworkDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterNetworkDataStore.swift; sourceTree = "<group>"; };
 		55240DED265388EA004F7C30 /* MonsterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRepository.swift; sourceTree = "<group>"; };
 		55240DF226539497004F7C30 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		55240DF926539E65004F7C30 /* UINib+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Loader.swift"; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		5561D512265F606C00CA588D /* PickerViewTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		5591D99328C201B400B20AD9 /* StorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContext.swift; sourceTree = "<group>"; };
 		5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTest.swift; sourceTree = "<group>"; };
+		5591D99B28C8CB9D00B20AD9 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		559ECD992656D27D00C3E7DD /* MonsterImageTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterImageTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		559ECD9B2656DB7900C3E7DD /* MonsterDetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailViewControllerDelegate.swift; sourceTree = "<group>"; };
 		55E3DC5B2655057D002D499B /* CategoryCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
@@ -372,7 +374,7 @@
 			children = (
 				2C386BBE264E0C690082F4B7 /* MonsterStaticDataStore.swift */,
 				55240DE82653884C004F7C30 /* MonsterCoreDataStore.swift */,
-				55240DEA2653885F004F7C30 /* SeederNetworkDataStore.swift */,
+				55240DEA2653885F004F7C30 /* MonsterNetworkDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -380,8 +382,8 @@
 		55240DEF26538BC1004F7C30 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				55240DF126538BDC004F7C30 /* Controller */,
-				55240DF026538BD8004F7C30 /* View */,
+				5591D99A28C8CB3A00B20AD9 /* ViewModel */,
+				5591D99928C8CB0000B20AD9 /* Views */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -480,6 +482,23 @@
 				5591D99728C89CFF00B20AD9 /* CoreDataManagerTest.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5591D99928C8CB0000B20AD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55240DF126538BDC004F7C30 /* Controller */,
+				55240DF026538BD8004F7C30 /* View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5591D99A28C8CB3A00B20AD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5591D99B28C8CB9D00B20AD9 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		55E3DC542654F3A3002D499B /* ItemMonstersCell */ = {
@@ -687,7 +706,8 @@
 				55240DFD26539E9D004F7C30 /* NetworkManager.swift in Sources */,
 				55E3DC5C2655057D002D499B /* CategoryCollectionViewCellDelegate.swift in Sources */,
 				2C75FA30264B99C40074C779 /* CategoryCollectionViewCell.swift in Sources */,
-				55240DEB2653885F004F7C30 /* SeederNetworkDataStore.swift in Sources */,
+				55240DEB2653885F004F7C30 /* MonsterNetworkDataStore.swift in Sources */,
+				5591D99C28C8CB9D00B20AD9 /* DashboardViewModel.swift in Sources */,
 				554C2C392656B34200714E2E /* MBColor.swift in Sources */,
 				554C2C362656AF0000714E2E /* MonsterDetailViewController+Delegate.swift in Sources */,
 				2C6A2E42264D658D00D4FAA6 /* DeleteButton.swift in Sources */,

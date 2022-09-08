@@ -15,7 +15,6 @@ extension DashboardViewController: DashboardViewDelegate {
 
 extension DashboardViewController: MonsterDetailViewControllerDelegate {
     func onFinish() {
-        maintainData()
-        dashboardView.dashboardTableView.reloadData()
+        dashboardViewModel.updateData()
     }
 }
