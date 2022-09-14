@@ -11,9 +11,9 @@ class DashboardView: UIView {
     
     @IBOutlet weak var dashboardTableView: UITableView!
     
-    weak var delegate: DashboardViewDelegate?
+    weak var delegate: DashboardViewProtocol?
     
-    func setup(delegate: DashboardViewDelegate) {
+    func setup(delegate: DashboardViewProtocol) {
         self.delegate = delegate
         
         dashboardTableView.registerCell(type: CategoryTableViewCell.self, identifier: "categoryCollectionCell")

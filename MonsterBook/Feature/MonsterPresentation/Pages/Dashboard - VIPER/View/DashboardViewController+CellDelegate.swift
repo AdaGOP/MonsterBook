@@ -9,6 +9,6 @@ import Foundation
 
 extension DashboardViewController: CategoryCollectionViewCellDelegate {
     func categoryDidTap(type: MonsterType?) {
-        self.performSegue(withIdentifier: "toListofMonsters", sender: type)
+        presenter?.presentListOfMonsters(monsterType: type)
     }
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xr-nW-N4L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Xr-nW-N4L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8JY-Q2-Yt4">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8JY-Q2-Yt4" id="zuH-ty-87S">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -52,9 +53,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="dashboardView" destination="NFV-jj-qjI" id="mqI-AX-vqh"/>
-                        <segue destination="O0h-qB-LhT" kind="show" identifier="toListofMonsters" id="4Fe-Vp-Sqd"/>
-                        <segue destination="QIK-ch-hp0" kind="show" identifier="toMonsterDetail" id="PgZ-7a-2EC"/>
-                        <segue destination="QIK-ch-hp0" kind="presentation" identifier="toMonsterDetailToAdd" id="g1Z-5C-dkw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMK-JR-T6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,9 +98,6 @@
             <point key="canvasLocation" x="113" y="716"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="PgZ-7a-2EC"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

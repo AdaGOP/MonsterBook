@@ -62,7 +62,8 @@ extension DashboardViewController: UITableViewDataSource {
 extension DashboardViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            performSegue(withIdentifier: "toMonsterDetail", sender: favoriteMonster?[indexPath.row])
+            presenter?.presentDetailOfMonsters(isDetail: true, monsterId: favoriteMonster?[indexPath.row])
+//            performSegue(withIdentifier: "toMonsterDetail", sender: favoriteMonster?[indexPath.row])
         }
     }
 }

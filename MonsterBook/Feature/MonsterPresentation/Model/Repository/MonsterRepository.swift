@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 protocol MonsterRepositoryDataStore{
     func getMonsters() -> [Monster]?
@@ -27,8 +28,8 @@ class MonsterRepository {
     var monsters: [Monster]?
     
     static let shared = MonsterRepository(staticDataStore: MonsterStaticDataStore())
-    
-    private init(staticDataStore: MonsterStaticDataStore) {
+
+    init(staticDataStore: MonsterStaticDataStore) {
         self.staticDataStore = staticDataStore
     }
     

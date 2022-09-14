@@ -37,4 +37,3 @@ extension UICollectionView {
         self.register(nib, forCellWithReuseIdentifier: identifier)
     }
 }
-
