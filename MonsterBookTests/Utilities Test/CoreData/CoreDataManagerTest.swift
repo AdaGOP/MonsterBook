@@ -25,10 +25,10 @@ class CoreDataManagerTest: XCTestCase {
         monster = nil
     }
     
-    func testEmptyReadData() throws {
-        let expectedResult: [CDMonster] = []
+    func testEmptyReadData() async throws {
+        let expectedResult: [MonsterMO] = []
         //
-        let monsters = try coreDataManager.fetch(CDMonster.self, process: { request in
+        let monsters = try await coreDataManager.fetch(MonsterMO.self, process: { request in
             request.predicate = nil
             request.sortDescriptors = []
         })
@@ -38,10 +38,10 @@ class CoreDataManagerTest: XCTestCase {
         XCTAssertTrue(monsters == expectedResult)
     }
     
-    func testAddData() throws {
+    func testAddData() async throws {
         let expectedResult = monster
         //
-        try coreDataManager.create(CDMonster.self, process: { newMonster in
+        try await coreDataManager.create(MonsterMO.self, process: { newMonster in
             newMonster.name = expectedResult?.name
             newMonster.type = expectedResult?.type?.rawValue
             newMonster.age = Int64(expectedResult?.age ?? 0)
@@ -52,10 +52,10 @@ class CoreDataManagerTest: XCTestCase {
         })
     }
     
-    func testReadData() throws {
+    func testReadData() async throws {
         let expectedResult = monster
         //
-        let monsters = try coreDataManager.fetch(CDMonster.self, process: { request in
+        let monsters = try await coreDataManager.fetch(MonsterMO.self, process: { request in
             request.predicate = nil
             request.sortDescriptors = []
         })
@@ -65,12 +65,12 @@ class CoreDataManagerTest: XCTestCase {
         XCTAssertTrue(monsters.first?.name == expectedResult?.name)
     }
     
-    func testDeleteAllData() throws {
-        let expectedResult: [CDMonster] = []
+    func testDeleteAllData() async throws {
+        let expectedResult: [MonsterMO] = []
         //
-        try coreDataManager.delete(CDMonster.self, process: nil, deletedObjects: nil)
+        try await coreDataManager.delete(MonsterMO.self, process: nil, deletedObjects: nil)
         //
-        let monsters = try coreDataManager.fetch(CDMonster.self, process: nil)
+        let monsters = try await coreDataManager.fetch(MonsterMO.self, process: nil)
         XCTAssertNotNil(monsters, "Item should not be nil")
         XCTAssertTrue(monsters == expectedResult)
     }
