@@ -30,7 +30,7 @@ class Monster {
         self.description = description
         self.age = age
         self.type = type
-        self.isFavorite = false
+        self.isFavorite = false 
     }
     
     func evolve() -> MonsterFirstEvolution?  {
